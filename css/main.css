@@ -1045,6 +1045,7 @@ pre .javascript .function {
   width: 100%;
   max-width: none;
   height: 700px;
+  background-image: none;
   background-position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
