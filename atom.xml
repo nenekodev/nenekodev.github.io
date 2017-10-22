@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>DF7C5117</title>
+  
+  <subtitle>尘土与烟霞，其间十馀步</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://df7c5117.github.io/"/>
+  <updated>2017-10-22T06:06:17.980Z</updated>
+  <id>https://df7c5117.github.io/</id>
+  
+  <author>
+    <name>df7c5117</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>初始化中...</title>
+    <link href="https://df7c5117.github.io/2017/10/22/init/"/>
+    <id>https://df7c5117.github.io/2017/10/22/init/</id>
+    <published>2017-10-22T05:20:56.000Z</published>
+    <updated>2017-10-22T06:06:17.980Z</updated>
+    
+    <content type="html"><![CDATA[<p>RT.预计2018.6月重新启动。</p>]]></content>
+    
+    <summary type="html">
+    
+      RT.预计2018.6月重新启动。
+    
+    </summary>
+    
+      <category term="Notification" scheme="https://df7c5117.github.io/categories/Notification/"/>
+    
+    
+      <category term="Notification" scheme="https://df7c5117.github.io/tags/Notification/"/>
+    
+  </entry>
+  
+</feed>
