@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
-  <entry>
-    <title><![CDATA[初始化中...]]></title>
-    <url>%2F2017%2F10%2F22%2Finit%2F</url>
-    <content type="text"><![CDATA[RT.预计2018.6月重新启动。]]></content>
-      <categories>
-        <category>Notification</category>
-      </categories>
-      <tags>
-        <tag>Notification</tag>
-      </tags>
-  </entry>
+  
+  
+    
+    <entry>
+      <title><![CDATA[初始化中...]]></title>
+      <url>https://df7c5117.github.io/2017/10/22/init/</url>
+      <content type="html"><![CDATA[<p>RT.预计2018.6月重新启动。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Notification </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Notification </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
 </search>
