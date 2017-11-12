@@ -998,6 +998,24 @@ pre .javascript .function {
   color: #fff !important;
   background-color: #4fb4f7;
 }
+.tag-cloudw {
+  text-align: center;
+}
+.tag-cloudw a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.1em !important;
+  color: #fff !important;
+  border: 2px solid #fff;
+  border-radius: 35px;
+  padding: 0 15px;
+  transition: 0.4s ease-out;
+}
+.tag-cloudw a:hover {
+  font-size: 1.1em !important;
+  color: #000 !important;
+  background-color: #fff;
+}
 .back-to-top {
   box-sizing: border-box;
   position: fixed;
