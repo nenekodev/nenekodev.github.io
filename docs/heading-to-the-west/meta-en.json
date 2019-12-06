@@ -20,6 +20,11 @@
 			"intro":"鐵幕重重困青年",
 			"avatar":"./img/avatar/natsu-houraisen.jpg",
 			"donates":"./img/avatar/natsu-donate.jpg"
+		},
+		{
+			"name":"Hyouga",
+			"intro":"[協助翻譯]",
+			"avatar":"./img/avatar/hyouga.jpg"
 		}
 	],
 	"pagetitle":"幻想朝西的生活"
