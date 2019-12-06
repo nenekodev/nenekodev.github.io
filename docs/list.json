@@ -1,14 +1,14 @@
 {
 	"arti":[
 		{
-			"addr":"./heading-to-the-west-zh.html",
-			"img":"./img/banner/Heading-to-the-west.jpg",
+			"addr":"./Heading-to-the-west-zh.html",
+			"img":"./img/banner/heading-to-the-west.jpg",
 			"title":"幻想朝西的生活",
 			"subtitle":"四川是讓他最接近夢想的地方，也是讓他理想破碎的地方。"
 		},
 		{
-			"addr":"./heading-to-the-west-en.html",
-			"img":"./img/banner/Heading-to-the-west.jpg",
+			"addr":"./Heading-to-the-west-en.html",
+			"img":"./img/banner/heading-to-the-west.jpg",
 			"title":"Heading to the west",
 			"subtitle":"Sichuan was the closest place to his dream，and so was where his ideals shattered. "
 		},
