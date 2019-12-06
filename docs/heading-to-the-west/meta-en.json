@@ -1,0 +1,26 @@
+{
+	"meta":[
+		{
+			"title":"Heading to the west",
+			"subtitle":"Sichuan was the closest place to his dream，and so was where his ideals shattered. "
+		}
+	],
+	"isExpand":"true",
+	"expand":[
+		{
+			"addr":"../heading-to-the-west-zh.html",
+			"title":"幻想朝西的生活",
+			"img":"./img/banner/heading-to-the-west.jpg"
+		}
+	],
+	"isDonate":"true",
+	"author":[
+		{
+			"name":"Natsu Houraisen",
+			"intro":"鐵幕重重困青年",
+			"avatar":"./img/avatar/natsu-houraisen.jpg",
+			"donates":"./img/avatar/natsu-donate.jpg"
+		}
+	],
+	"pagetitle":"幻想朝西的生活"
+}

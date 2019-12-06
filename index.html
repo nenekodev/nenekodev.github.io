@@ -1,0 +1,107 @@
+<html>
+<head>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/base.css">
+
+	<link rel="shortcut icon" href="./img/ico/favicon.ico"/>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./img/ico/icon-57.png">  
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/ico/icon-72.png">  
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/ico/icon-114.png">  
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/ico/icon-144.png"> 
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+<div id="app" v-cloak>
+	<nav id='nav' class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<router-link to="/" class="navbar-brand">不萬能 OmniArchives</router-link>
+		</div>
+	</nav>	
+
+	<div class="home" key="home">
+		<div id="arti" class="container pt-1" style="margin-top:86px;">
+		<h6>此處暫時僅本地化一部分不適宜于内網存儲的文章，其餘正在動遷。</h6>
+		<br>
+		<h6>分店鏈接： <br><a href="https://douban.com/people/omnihouraisen">豆瓣 @有一只初夏 ></a><br><a href="https://df7c5117.tuchong.com">圖蟲 @有一只初夏 ></a><br><a href="https://www.acfun.cn/u/1432594.aspx">Acfun @Natsu_Houraisen ></a><br><a href="https://github.com/df7c5117">Github @df7c5117 ></a></h6>
+		<div class="row">
+			<div class="col-12" v-for="(article,index) in arti" :key="index">
+				<a :href="article.addr">
+				<div class="card mt-4">
+					<div class="row" style="margin:0">
+					<img class="card-img home col-12 col-md-6" :src="article.img">
+					<div class="card-body col-12 col-md-6">
+						<div class="inside">
+						<h5 class="card-title home" :title="article.title">{{article.title}}</h5>
+						<p class="card-text home">{{article.subtitle}}</p>
+						</div>
+					</div>
+				</div>
+				</div>
+				</a>
+			</div>
+
+			<div class="col-12 mt-5" v-pre>
+				<center><h5 class="subtext">—— · ——</h5></center>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div id="foot" class="jumbotron jumbotron-fluid bg-dark text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12 copy">
+				<p><small>© 2019 <span class="nowrap">Omnipotent Houraisen.</span>
+					<br>All Rights Reserved.
+					<br>
+					<br>
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知識共享許可協議" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br><br>本站點及鏈接的作品皆采用<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知識共享署名-相同方式共享 4.0 國際許可協議</a><br>進行許可</small></p>
+				</div>
+
+				<div class="col-md-6 col-12 copy right">
+				<p><small><code>hello@omnihouraisen.cn</code><br>
+					<br>Hosted by <code>Github Pages</code>
+					<br>Powered by <code>Vue.js</code>
+				</small></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+var app = new Vue({
+	el:'#app',
+	data(){
+		return{
+			arti:[],
+			select:[],
+			filter:[],
+			current:1
+		}
+	},
+	created () {
+		document.title = '不萬能 OmniArchives';
+	},
+	mounted(){
+		axios
+		.get('./docs/list.json')
+		.then(response => {
+			this.arti=response.data.arti;
+			this.select=response.data.select;
+		})	
+	}
+})
+</script>
+</html>

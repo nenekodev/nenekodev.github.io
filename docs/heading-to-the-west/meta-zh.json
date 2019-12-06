@@ -1,0 +1,26 @@
+{
+	"meta":[
+		{
+			"title":"幻想朝西的生活",
+			"subtitle":"四川是讓他最接近夢想的地方，<br>也是讓他理想破碎的地方。"
+		}
+	],
+	"isExpand":"true",
+	"expand":[
+		{
+			"addr":"../heading-to-the-west-en.html",
+			"title":"Heading to the West",
+			"img":"./img/banner/heading-to-the-west.jpg"
+		}
+	],
+	"isDonate":"true",
+	"author":[
+		{
+			"name":"Natsu Houraisen",
+			"intro":"鐵幕重重困青年",
+			"avatar":"./img/avatar/natsu-houraisen.jpg",
+			"donates":"./img/avatar/natsu-donate.jpg"
+		}
+	],
+	"pagetitle":"幻想朝西的生活"
+}

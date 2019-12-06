@@ -1,0 +1,153 @@
+<html>
+<head>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/base.css">
+
+	<link rel="shortcut icon" href="./img/ico/favicon.ico"/>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./img/ico/icon-57.png">  
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/ico/icon-72.png">  
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/ico/icon-114.png">  
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/ico/icon-144.png"> 
+
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+<div id="app" v-cloak>
+	<nav id='nav' class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a href="./" class="navbar-brand">不萬能 OmniArchives</a>
+		</div>
+	</nav>	
+
+	<div class="about" key="about">
+	<div id="top" class="jumbotron jumbotron-fluid jumbohead1" style="margin-top:55px">
+		<div class="container" v-for="(meta,index) in meta" :key="index">
+			<div class="row ">
+				<div class="col-lg-8 col-12">
+				<h1 style="font-size: 2.8rem" v-html="meta.title"></h1>
+				<br>
+				<p class="lead" v-html="meta.subtitle"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container textcon pt-3 mb-5">
+		<div class="row">
+			<div class="col-lg-8 col-12">
+				<div id="markdown"></div>
+			</div>
+
+			<div class="col-lg-4 col-12">
+				<h3 class="colored">關於作者</h3>
+				<br>
+				<div class="infocont" v-for="(info,index) in author" :key="index">
+					<img :src='info.avatar'/>
+					<div class="ml-3">
+						<h5>{{info.name}}</h5>
+						<h6 class="subtext">{{info.intro}}</h6>
+					</div>
+				</div>
+				<br>
+				<div v-if="isExpand=='true'">
+					<hr>
+					<br>
+					<h3 class="colored">延伸閲讀</h3>
+					<div class="col-12" v-for="(article,index) in expand" :key="index">
+						<a :href="article.addr">
+							<div class="card mt-5">
+								<img class="card-img inner" :src="article.img">
+								<div class="card-body">
+									<h5 class="card-title" :title="article.title" style="margin-bottom:0">{{article.title}}</h5>
+								</div>
+							</div>
+						</a>
+					</div>
+					<br>
+				</div>
+				<div v-if="isDonate=='true'">
+					<hr>
+					<br>					
+					<h3 class="colored">資瓷一個</h3>
+					<br>
+					<img v-for="(info,index) in author" :key="index" :src="info.donates" width="100%" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<div id="foot" class="jumbotron jumbotron-fluid bg-dark text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-12 copy">
+				<p><small>© 2019 <span class="nowrap">Omnipotent Houraisen.</span>
+					<br>All Rights Reserved.
+					<br>
+					<br>
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="知識共享許可協議" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br><br>本站點及鏈接的作品皆采用<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知識共享署名-相同方式共享 4.0 國際許可協議</a><br>進行許可</small></p>
+				</div>
+
+				<div class="col-md-6 col-12 copy right">
+				<p><small><code>hello@omnihouraisen.cn</code><br>
+					<br>Hosted by <code>Github Pages</code>
+					<br>Powered by <code>Vue.js</code>
+				</small></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/showdown/1.9.0/showdown.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+var app = new Vue({
+	el:'#app',
+	data(){
+		return{
+			meta:[],
+			isExpand:null,
+			expand:[],
+			isDonate:null,
+			author:[]
+		}
+	},
+	mounted(){
+	axios
+		.get('./docs/heading-to-the-west/meta-en.json')
+		.then(response => {
+			this.meta=response.data.meta;
+			this.isExpand=response.data.isExpand;
+			this.expand=response.data.expand;				
+			this.isDonate=response.data.isDonate;
+			this.author=response.data.author;
+			document.title=response.data.pagetitle+" / 不萬能 OmniArchives";
+		});
+	$(document).ready(function(){
+		var obj = $.ajax({
+			type:"get",
+			url: "./docs/heading-to-the-west/en.md",
+			dataType: "text"
+		});
+		obj.then(res=>{
+			var Convertor = new showdown.Converter();
+			var html = Convertor.makeHtml(res);
+			document.getElementById('markdown').innerHTML = html;
+		}
+		)
+	});
+	}
+})
+</script>
+</html>
