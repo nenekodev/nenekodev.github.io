@@ -3,7 +3,6 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
-	background-color: #f4f4f4!important;
 	overflow-x: hidden;
 }
 .nowrap {
@@ -20,7 +19,7 @@ h6 a{
 	line-height: 2.2em
 }
 a:hover{
-	color:#42b983
+	color:#42b983!important
 }
 .textcon p{
 	line-height: 2em;
@@ -80,7 +79,6 @@ mark{
 /*home-components*/
 
 .jumbohead{
-	background-color:#fff!important;
 	background-size:50%;
 	background-repeat:no-repeat;
 	background-position: bottom right;
@@ -90,11 +88,6 @@ mark{
 
 .d-block{
 	border-radius:10px;
-}
-blockquote{
-	padding: 0.5em 1.5em 0 1.5em;
-	background-color: #eee;
-	color: #888
 }
 .card{
 	border:none;

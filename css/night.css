@@ -1,0 +1,28 @@
+nav{
+	border-bottom:1px solid #333!important;
+	background:#424242
+}
+nav a{
+	color:#fff;
+}
+#app{
+	background-color: #333!important;
+	color:#e7e7e7!important;
+}
+.card{
+	color:#e7e7e7;
+	background-color: #444
+}
+.card:hover{
+	color:#42b983!important
+}
+
+blockquote{
+	padding: 0.5em 1.5em 0 1.5em;
+	background-color: #444;
+	color: #999
+}
+
+.jumbotron{
+	background-color: #444!important
+}
