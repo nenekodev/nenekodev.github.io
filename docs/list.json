@@ -2,45 +2,45 @@
 	"arti":[
 		{
 			"addr":"./Heading-to-the-west-zh.html",
-			"img":"./img/banner/heading-to-the-west.jpg",
 			"title":"幻想朝西的生活",
-			"subtitle":"四川是讓他最接近夢想的地方，也是讓他理想破碎的地方。"
+			"subtitle":"四川是最讓他接近夢想的地方，也是讓他理想破碎的地方。",
+			"date":"2019-11-13"
 		},
 		{
 			"addr":"./Heading-to-the-west-en.html",
-			"img":"./img/banner/heading-to-the-west.jpg",
 			"title":"Heading to the west",
-			"subtitle":"Sichuan was the closest place to his dream，and so was where his ideals shattered. "
+			"subtitle":"Sichuan was the closest place to his dream，and so was where his ideals shattered. ",
+			"date":"2019-11-13"
 		},
 		{
-			"addr":"https://6url.cn/XricnL",
-			"img":"./img/banner/purple.jpg",
+			"addr":"./No-closet-for-this-planet.html",
 			"title":"這個星球本就不存在櫃子。",
-			"subtitle":"不用粉墨，就站在光明的角落。"
+			"subtitle":"不用粉墨，就站在光明的角落。",
+			"date":"2019-10-17"
 		},
 		{
 			"addr":"https://6url.cn/PlbyGI",
-			"img":"./img/banner/lame-dreams-1.jpg",
 			"title":"問問過去的二十年，我們為什麼是今天這個樣子",
-			"subtitle":"我那些殘夢，靈異九霄"
+			"subtitle":"我那些殘夢，靈異九霄",
+			"date":"2019-09-01"
 		},
 		{
 			"addr":"https://6url.cn/yrDEKT",
-			"img":"./img/banner/hangzhou-summer.jpg",
 			"title":"西子之畔，初夏臨安。",
-			"subtitle":"為何在慌亂中沖進這城市把一切打亂？"
+			"subtitle":"為何在慌亂中沖進這城市把一切打亂？",
+			"date":"2019-07-16"
 		},
 		{
 			"addr":"https://6url.cn/iztEOs",
-			"img":"./img/banner/in-love-with-nanking.jpg",
 			"title":"對一座城市的長情告白。",
-			"subtitle":"你離開了南京，從此沒有人和我說話。"
+			"subtitle":"你離開了南京，從此沒有人和我說話。",
+			"date":"2019-05-23"
 		},
 		{
-			"addr":"https://6url.cn/gJkhNh",
-			"img":"./img/banner/has-man-a-future.jpg",
+			"addr":"./has-man-a-future.html",
 			"title":"他們說這世界應該是我們的。",
-			"subtitle":"青年者，人生之王，人生之春，人生之華也。"
+			"subtitle":"青年者，人生之王，人生之春，人生之華也。",
+			"date":"2019-05-04"
 		}
 	]
 }

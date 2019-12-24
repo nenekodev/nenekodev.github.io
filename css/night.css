@@ -1,8 +1,8 @@
 nav{
-	border-bottom:1px solid #333!important;
+	border-bottom:none!important;
 	background:#424242
 }
-nav a{
+a{
 	color:#fff;
 }
 #app{
@@ -10,19 +10,30 @@ nav a{
 	color:#e7e7e7!important;
 }
 .card{
-	color:#e7e7e7;
-	background-color: #444
-}
-.card:hover{
-	color:#42b983!important
-}
-
-blockquote{
-	padding: 0.5em 1.5em 0 1.5em;
 	background-color: #444;
-	color: #999
+}
+blockquote{
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	background-color: #444;
+	color: #999;
+	border-radius: 0.6em
 }
 
 .jumbotron{
 	background-color: #444!important
+}
+
+.alert-danger{
+	background-color: #721c24!important;
+	color: #f8d7da!important;
+}
+.btn-outline-secondary{
+	color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    color: #424242;
+    background-color: #fff;
+    border-color: #fff;
 }

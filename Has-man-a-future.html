@@ -119,7 +119,7 @@ var app = new Vue({
 	},
 	mounted(){
 	axios
-		.get('./docs/heading-to-the-west/meta-zh.json')
+		.get('./docs/has-man-a-future/meta-zh.json')
 		.then(response => {
 			this.meta=response.data.meta;
 			this.isExpand=response.data.isExpand;
@@ -131,7 +131,7 @@ var app = new Vue({
 	$(document).ready(function(){
 		var obj = $.ajax({
 			type:"get",
-			url: "./docs/heading-to-the-west/zh.md",
+			url: "./docs/has-man-a-future/zh.md",
 			dataType: "text"
 		});
 		obj.then(res=>{
