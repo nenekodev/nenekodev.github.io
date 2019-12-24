@@ -126,6 +126,7 @@ var app = new Vue({
 			this.expand=response.data.expand;	
 			this.author=response.data.author;
 			document.title=response.data.pagetitle+" / 不萬能狸奴堂 OmniArchives";
+			document.getElementById('type').innerHTML=response.data.type;
 		});
 	$(document).ready(function(){
 		var obj = $.ajax({
