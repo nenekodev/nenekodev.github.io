@@ -20,7 +20,7 @@ if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
     doc_head.appendChild(link_style2);
 
 }else{
-	document.getElementById('changeTheme').style.display="none";
+	document.getElementById('changeTheme').style.display="";
 
 	var date = new Date();
 	var dHours = date.getHours();
