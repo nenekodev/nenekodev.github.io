@@ -109,6 +109,9 @@ mark{
 .inside{
 	width:100%
 }
+#markdown p img{
+	width: 100%
+}
 
 /*--------------------*/
 /*detail-components*/
