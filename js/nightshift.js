@@ -5,25 +5,33 @@ var link_style = document.createElement("link");
 link_style.setAttribute("rel","stylesheet");
 link_style.setAttribute("type","text/css");
 
-if ((dHours > 21 || dHours < 6)&& sessionStorage.inverse == 0){
-	var isNight = 1;
-}else if ((dHours > 21 || dHours < 6)&& sessionStorage.inverse == 1){
-	var isNight = 0;
-}else if ((dHours <= 21 && dHours >= 6)&& sessionStorage.inverse == 0){
-	var isNight = 0;
+if (sessionStorage.inverse != 1 && sessionStorage.inverse != 0){
+	sessionStorage.inverse = 0;
+}
+
+if (dHours > 21 || dHours < 6){
+	if (sessionStorage.inverse == 1){
+		var isNight = 0;
+	}else{
+		var isNight = 1;
+	}
 }else{
-	var isNight = 1;
+	if (sessionStorage.inverse == 1){
+		var isNight = 1;
+	}else{
+		var isNight = 0;
+	}	
 }
 
 function changeTheme(){
 	if (isNight){
 		day();
 		isNight = 0;
-		sessionStorage.inverse = 1;
+		sessionStorage.inverse = 1 - sessionStorage.inverse;
 	}else{
 		night();
 		isNight = 1;
-		sessionStorage.inverse = 0;
+		sessionStorage.inverse = 1 - sessionStorage.inverse;
 	}
 }
 
