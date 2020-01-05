@@ -4,6 +4,7 @@ if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
     console.log('Dark mode is supported');
 
 	document.getElementById('changeTheme').style.display="none";
+	document.getElementById('autoChangeTheme').style.display="";
 
     var link_style1 = document.createElement("link");
 	link_style1.setAttribute("rel","stylesheet");
@@ -21,6 +22,7 @@ if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
 
 }else{
 	document.getElementById('changeTheme').style.display="";
+	document.getElementById('autoChangeTheme').style.display="none";
 
 	var date = new Date();
 	var dHours = date.getHours();
