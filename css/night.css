@@ -43,3 +43,7 @@ blockquote{
     background-color: #fff;
     border-color: #fff;
 }
+
+#markdown p img{
+	filter:brightness(0.7);
+}
