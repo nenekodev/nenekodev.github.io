@@ -105,6 +105,9 @@ mark{
 .infocont .ml-3{
 	display: inline-block;
 }
+.swiper-slide{
+	height:auto;
+}
 .swiper-wrapper{
 	height: auto;
 	width: auto;
