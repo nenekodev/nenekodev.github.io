@@ -1,26 +1,26 @@
 nav{
 	border-bottom:none!important;
-	background:#333
+	background:#111
 }
 a{
 	color:#fff;
 }
 #app{
-	background-color: #333!important;
+	background-color: #111!important;
 	color:#e7e7e7!important;
 }
 .card{
-	background-color: #444;
+	background-color: #222;
 }
 blockquote{
 	padding: 0.5em 1.5em 0.5em 1.5em;
-	background-color: #444;
+	background-color: #222;
 	color: #999;
-	border-radius: 0.6em
+	border-radius: 0.3em
 }
 
 .jumbotron{
-	background-color: #444!important
+	background-color: #222!important
 }
 
 .alert-danger{
@@ -49,7 +49,7 @@ blockquote{
 }
 
 #arti .card,#post .card{
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #111;
 }
 
 .grey{
