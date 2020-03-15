@@ -1,0 +1,113 @@
+body{
+	margin:5px;
+	background:#000;
+	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+section::after {
+	content: '';
+	flex-grow: 999999999;
+}
+.cont {
+	margin: 5px;
+	background-color: #333;
+	position: relative;
+	overflow: hidden
+}
+i{
+	display: block;
+}
+.bg{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	vertical-align: bottom;
+	filter: brightness(0.3);
+	-webkit-filter: brightness(0.3);
+	transition: all .8s cubic-bezier(.22,.58,.12,.98)
+}
+.bg:hover{
+	filter: none
+}
+.float{
+	position: fixed;
+	z-index: 10;
+	display: inline-flex;
+	-webkit-display: inline-flex;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-start;
+	align-content: center;
+	pointer-events:none;
+	flex-wrap: wrap;
+}
+.fldiv{
+	flex-basis: 350px;
+	line-height: 0.5em;
+	height: 150px;
+	display: flex;
+	-webkit-display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+}
+@media(max-width: 520px){
+	.float{
+		justify-content: center;
+		padding: 0
+	}
+}
+
+/*-------basic-------*/
+html::-webkit-scrollbar,
+div::-webkit-scrollbar {
+	width: 10px;
+	background: none;
+}
+html::-webkit-scrollbar-button,
+div::-webkit-scrollbar-button {
+	display: none
+}
+html::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+	background-color: #333;
+}
+
+h1,h3{
+	transition: all .8s cubic-bezier(.22,.58,.12,.98);
+	color: #fff;
+	letter-spacing: 0.2em;
+	font-weight: 300;
+}
+.avt{
+	border-radius: 50%;
+	width:150px;
+	height: 150px;
+	margin: 0 60px;
+}
+
+.hide{
+	opacity: 0;
+}
+
+.animate{
+	animation-name: slidein;
+	-webkit-animation-name: slidein;
+	animation-duration: 1000ms;
+}
+.animate1{
+	animation-name: slideinBG;
+	-webkit-animation-name: slideinBG;
+	animation-duration: 1000ms;
+}
+
+@keyframes slidein{
+	0%{transform: translate(0px,50px);-webkit-transform: translate(0px,50px);opacity: 0}
+	to{transform: translate(0px,0px);-webkit-transform: translate(0px,0px);opacity: 1}
+}
+@keyframes slideinBG{
+	0%{transform: translate(0px,-50px);-webkit-transform: translate(0px,-50px);opacity: 0}
+	to{transform: translate(0px,0px);-webkit-transform: translate(0px,0px);opacity: 1}
+}

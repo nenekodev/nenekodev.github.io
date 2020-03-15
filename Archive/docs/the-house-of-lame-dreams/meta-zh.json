@@ -1,0 +1,29 @@
+{
+	"meta":[
+		{
+			"title":"問問過去的二十年，<br>我們為什麼是今天這個樣子",
+			"subtitle":"我那些殘夢，靈異九霄。",
+			"date":"2019-09-01"
+		}
+	],
+	"isExpand":"false",
+	"author":[
+		{
+			"name":"Natsu Houraisen",
+			"intro":"鐵幕重重困青年",
+			"avatar":"../img/avatar/natsu-houraisen.jpg"
+		},
+		{
+			"name":"一隻狗",
+			"intro":"[討論參與者]",
+			"avatar":"../img/avatar/chan.jpg"
+		},
+		{
+			"name":"小念",
+			"intro":"[討論參與者]",
+			"avatar":"../img/avatar/nian.jpg"
+		}
+	],
+	"pagetitle":"問問過去的二十年，我們為什麼是今天這個樣子",
+	"type":"雜談版"
+}
