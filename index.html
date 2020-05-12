@@ -10,43 +10,43 @@
 		<img class="avt hide" src="https://avatars3.githubusercontent.com/u/13192856"> 
 		<div class="fldiv">
 			<h1 class="hide">Natsu Houraisen</h1>
-			<h3 class="hide">Photography Showreel</h3>
+			<h3 class="hide">無處可逃</h3>
+			<div>
+				<h4><b>
+					<a class="hide" id="link1" href="./Archive">地下電臺</a>
+					<span class="hide" id="splash1"> / </span>
+					<a class="hide" id="link2" href="https://df7c5117.tuchong.com">Photography Showreel</a>
+					<span class="hide" id="splash2"> / </span>
+					<a class="hide" id="link3" href="./NanjingLizhiBot/PLUS">李志Bot</a>
+				</b></h4>
+			</div>
 		</div>
 	</div>
 	<section>
-		<div class="cont" v-for="img in imgs" :style="{width:img.width*200/img.height+'px','flex-grow':img.width*200/img.height}">
-			<i :style="{'padding-bottom':img.height/img.width*100+'%'}"></i>
-			<img class="bg" :src="img.url" alt="">
-		</div>
+		<div></div>
 	</section>
 	</div>
 </body>
 
 <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
-<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 var app = new Vue({
 	el:'#app',
-	data(){
-		return{
-			imgs:[]
-		}
-	},
 	created () {
-		document.title = 'OmniGalleries';
+		document.title = '廢人們 都在忙什麽？';
 	},
 	mounted(){
-		axios
-		.get('./images.json')
-		.then(response => {
-			this.imgs=response.data.imgs;
-		});
 		$('.avt').removeClass('hide');
 		$('.avt').addClass('animate');
 		$('section').addClass('animate1');
 		setTimeout(function(){$('h1').removeClass('hide');$('h1').addClass('animate');},200);
-		setTimeout(function(){$('h3').removeClass('hide');$('h3').addClass('animate');},400);			
+		setTimeout(function(){$('h3').removeClass('hide');$('h3').addClass('animate');},400);
+		setTimeout(function(){$('#link1').removeClass('hide');$('#link1').addClass('animate');},800);
+		setTimeout(function(){$('#splash1').removeClass('hide');$('#splash1').addClass('animate');},1200);		
+		setTimeout(function(){$('#link2').removeClass('hide');$('#link2').addClass('animate');},1600);
+		setTimeout(function(){$('#splash2').removeClass('hide');$('#splash2').addClass('animate');},2000);		
+		setTimeout(function(){$('#link3').removeClass('hide');$('#link3').addClass('animate');},2400);				
 	}
 })
 </script>
