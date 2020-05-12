@@ -81,7 +81,7 @@ mark{
 	border-radius: 0px;
 }
 
-#cont,.col-12{
+#maincont,#cont .col-12{
 	padding: 0;
 }
 

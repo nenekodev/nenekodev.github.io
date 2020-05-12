@@ -8,13 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/day.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)"> 
 	<link rel="stylesheet" type="text/css" href="../css/night.css" media="(prefers-color-scheme: dark)"> 
 	
-
 	<link rel="shortcut icon" href="../img/ico/favicon.ico"/>
-
-	<link rel="apple-touch-icon" sizes="57x57" href="./img/ico/icon-57.png">  
-	<link rel="apple-touch-icon" sizes="72x72" href="./img/ico/icon-72.png">  
-	<link rel="apple-touch-icon" sizes="114x114" href="./img/ico/icon-114.png">  
-	<link rel="apple-touch-icon" sizes="144x144" href="./img/ico/icon-144.png">
 
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -53,41 +47,29 @@
 			</div>
 
 			<div class="col-lg-4 col-12">
-				<h3 class="colored bold">關於作者</h3>
-				<br>
-				<div class="infocont mt-3" v-for="(info,index) in author" :key="index">
-					<img :src='info.avatar'/>
-					<div class="ml-3">
-						<h5>{{info.name}}</h5>
-						<h6 class="subtext">{{info.intro}}</h6>
-					</div>
-				</div>
-				<br>
-				<div v-if="isExpand=='true'">
-					<hr>
-					<br>
-					<h3 class="colored bold">延伸閲讀</h3>
-					<br>
-					<div v-for="(article,index) in expand" :key="index">
-						<a :href="article.addr"><h5>{{article.title}} ›</h5></a>
-					</div>
-					<br>
-				</div>
-
 				<div class="mt-5" id="foot">
-					<div>
-						<h3 class="colored bold">分店鏈接</h3>
+					<h3 class="colored bold">關於作者</h3>
+					<br>
+					<div class="infocont mt-3" v-for="(info,index) in author" :key="index">
+						<img :src='info.avatar'/>
+						<div class="ml-3">
+							<h5>{{info.name}}</h5>
+							<h6 class="subtext">{{info.intro}}</h6>
+						</div>
+					</div>
+					<br>
+					<div v-if="isExpand=='true'">
+						<hr>
 						<br>
-						<h6>
-						<small>
-							<a href="https://douban.com/people/omnihouraisen">豆瓣 @有一只初夏</a><br>
-							<a href="https://df7c5117.tuchong.com">圖蟲 @有一只初夏</a><br>
-							<a href="https://www.acfun.cn/u/1432594.aspx">Acfun @Natsu_Houraisen</a><br>
-							<a href="https://github.com/df7c5117">Github @df7c5117</a><br>
-						</small>
-						</h6>
+						<h3 class="colored bold">延伸閲讀</h3>
+						<br>
+						<div v-for="(article,index) in expand" :key="index">
+							<a :href="article.addr"><h5>› {{article.title}}</h5></a>
+						</div>
 						<br>
 					</div>
+					</h6>
+					<br>
 
 					<div>
 						<p><small>© <span class="nowrap">Omnipotent Houraisen「狸奴堂」</span><br>
