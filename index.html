@@ -2,25 +2,23 @@
 <head>
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./style.css"></link>
 </head>
 <body>
 	<div id="app" v-cloak>
-	<div class="float">
-		<img class="avt hide" src="https://avatars3.githubusercontent.com/u/13192856"> 
-		<div class="fldiv">
-			<h1 class="hide">Natsu Houraisen</h1>
-			<h3 class="hide">無處可逃</h3>
-			<div>
-				<h4><b>
-					<a class="hide" id="link1" href="./333plus4">叁叁叁 + 肆計劃</a>
-					<span class="hide" id="splash1"> / </span>
-					<a class="hide" id="link2" href="https://df7c5117.tuchong.com">Photography Showreel</a>
-					<span class="hide" id="splash2"> / </span>
-					<a class="hide" id="link3" href="./NanjingLizhiBot/PLUS">李志Bot</a>
-				</b></h4>
-			</div>
+	<nav class="navbar fixed-top navbar-expand-lg">
+		<div class="navbar-nav">
+			<a class="nav-item nav-link" href="./333plus4">Proj 333+4</a>
+			<a class="nav-item nav-link" href="https://df7c5117.tuchong.com">Showreel</a>
+			<a class="nav-item nav-link" href="./NanjingLizhiBot/PLUS">李志Bot</a>
 		</div>
+	</nav>
+	<div class="float">
+		<img class="avt hide" src="https://avatars3.githubusercontent.com/u/13192856">
+		<br>
+		<h1 class="hide">Natsu Houraisen</h1>
+		<h4 class="hide">「我是否該寫一首悲傷的歌」</h4>
 	</div>
 	<section>
 		<div></div>
@@ -34,19 +32,14 @@
 var app = new Vue({
 	el:'#app',
 	created () {
-		document.title = '廢人們 都在忙什麽？';
+		document.title = 'Natsu Houraisen';
 	},
 	mounted(){
 		$('.avt').removeClass('hide');
 		$('.avt').addClass('animate');
 		$('section').addClass('animate1');
 		setTimeout(function(){$('h1').removeClass('hide');$('h1').addClass('animate');},200);
-		setTimeout(function(){$('h3').removeClass('hide');$('h3').addClass('animate');},400);
-		setTimeout(function(){$('#link1').removeClass('hide');$('#link1').addClass('animate');},800);
-		setTimeout(function(){$('#splash1').removeClass('hide');$('#splash1').addClass('animate');},1200);		
-		setTimeout(function(){$('#link2').removeClass('hide');$('#link2').addClass('animate');},1600);
-		setTimeout(function(){$('#splash2').removeClass('hide');$('#splash2').addClass('animate');},2000);		
-		setTimeout(function(){$('#link3').removeClass('hide');$('#link3').addClass('animate');},2400);				
+		setTimeout(function(){$('h4').removeClass('hide');$('h4').addClass('animate');},400);
 	}
 })
 </script>
