@@ -35,6 +35,7 @@ section {
 }
 .float{
 	position: fixed;
+	padding: 0 20px;
 	z-index: 10;
 	display: inline-flex;
 	-webkit-display: inline-flex;
@@ -61,7 +62,7 @@ div::-webkit-scrollbar-thumb {
 	background-color: #333;
 }
 
-h1,h3,h4,span{
+h2,h3,h5,span{
 	transition: all .8s cubic-bezier(.22,.58,.12,.98);
 	color: #fff;
 	letter-spacing: 0.1em;
