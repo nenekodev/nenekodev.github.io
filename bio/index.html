@@ -1,0 +1,65 @@
+<html lang="zh" >
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./style.css"></link>
+</head>
+<body>
+	<div id="app" v-cloak>
+	<div class="float">
+		<img class="avt hide" @mouseover="changeBio()" @mouseleave="resetBio()" style="pointer-events: auto!important;" :src="avatar"> 
+		<div class="fldiv">
+			<h1 class="hide" style="display: block;width: 100%;">Natsu Houraisan</h1>
+			<h3 class="hide" v-html="bio" @mouseover="changeBio()" @mouseleave="resetBio()" style="display: block;width: 100%;pointer-events: auto!important;"></h3>
+		</div>
+	</div>
+	<section>
+		<div class="cont" v-for="img in imgs" :style="{width:img.width*200/img.height+'px','flex-grow':img.width*200/img.height}">
+			<i :style="{'padding-bottom':img.height/img.width*100+'%'}"></i>
+			<img class="bg" :src="img.url" alt="">
+		</div>
+	</section>
+	</div>
+</body>
+
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+var app = new Vue({
+	el:'#app',
+	data(){
+		return{
+			imgs:[],
+			bio: "@nenekodev / ネネコ / <s>初夏寧寧子</s>",
+			avatar: "https://avatars3.githubusercontent.com/u/13192856"
+		}
+	},
+	created () {
+		document.title = 'OmniGalleries';
+	},
+	mounted(){
+		axios
+		.get('./images.json')
+		.then(response => {
+			this.imgs=response.data.imgs;
+		});
+		$('.avt').removeClass('hide');
+		$('.avt').addClass('animate');
+		$('section').addClass('animate1');
+		setTimeout(function(){$('h1').removeClass('hide');$('h1').addClass('animate');},200);
+		setTimeout(function(){$('h3').removeClass('hide');$('h3').addClass('animate');},400);			
+	},
+	methods:{
+		changeBio(){
+			this.bio = "嘉然小姐我真的好喜欢你啊!";			
+			this.avatar = "https://s4.ax1x.com/2021/12/08/oW1IW4.jpg";
+		},
+		resetBio(){
+			this.bio = "@nenekodev / ネネコ / <s>初夏寧寧子</s>";
+			this.avatar = "https://avatars3.githubusercontent.com/u/13192856";
+		}
+	}
+})
+</script>
+</html>
