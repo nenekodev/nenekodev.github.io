@@ -1,6 +1,5 @@
 body{
-	margin:5px;
-	background:#000;
+	background: #c4f5f2;
 	font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans CN,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
 }
 /*
@@ -21,16 +20,18 @@ body{
 .navbar-nav {
 	display: block;
 }*/
+#svg-container{
+	background: #00000099;
+}
 
 section {
 	display: flex;
 	width:100%;
 	height:100%;
 	flex-wrap: wrap;	
-	background-image:url("has-man-a-future.png");
-	background-position: top center;
+	background-image:url("Diana.png");
+	background-position: bottom center;
 	background-repeat: no-repeat;
-	filter: opacity(0.4);
 	background-size:100%;
 }
 /*.float{
