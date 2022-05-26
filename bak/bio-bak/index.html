@@ -1,0 +1,98 @@
+<html lang="zh" >
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="./style.css"></link>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/journey-ad/blog-img@94eb7e2/live2d/lib/pio.css"></link>
+</head>
+<body>
+	<div id="app" v-cloak>
+	<div class="pio-container right" style="pointer-events: auto!important;">
+		<div class="pio-action"></div>
+		<canvas id="pio" width="600" height="600"></canvas>
+	</div>
+	<div class="float">
+		<img class="avt hide" @mouseover="changeBio()" @mouseleave="resetBio()" @dblclick="followDiana()" ondblclick="loadDiana();" title="双击一下！&#10关注嘉然，顿顿解馋！" style="pointer-events: auto!important;" :src="avatar"> 
+		<div class="fldiv">
+			<h1 class="hide" style="display: block;width: 100%;">Natsu Houraisan</h1>
+			<h3 class="hide" v-html="bio" @mouseover="changeBio()" @mouseleave="resetBio()" @dblclick="followDiana()" ondblclick="loadDiana();" title="双击一下！&#10关注嘉然，顿顿解馋！"  style="display: block;width: 100%;pointer-events: auto!important;"></h3>
+		</div>
+	</div>
+	<section>
+		<div class="cont" v-for="img in imgs" :style="{width:img.width*200/img.height+'px','flex-grow':img.width*200/img.height}">
+			<i :style="{'padding-bottom':img.height/img.width*100+'%'}"></i>
+			<img class="bg" :src="img.url" alt="">
+		</div>
+	</section>
+	</div>
+</body>
+
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/3.2.31/vue.global.prod.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/axios/0.26.0/axios.min.js"></script>
+<script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/zepto/1.2.0/zepto.min.js"></script>
+
+<script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/pixi.js/6.2.2/browser/pixi.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi-live2d-display@0.3.1/dist/cubism4.min.js"></script>
+<script src="./Diana/pio.js"></script>
+
+<script type="text/javascript">
+//嘉然，我的嘉然，你带我走吧然然
+
+// 初始化设定
+
+let pio_reference // pio实例
+
+var isDiana = false;
+
+function loadDiana() {
+	if(isDiana == false){
+		pio_reference = new Paul_Pio(initConfig)
+		isDiana = true;
+	}
+}
+
+const app = Vue.createApp({
+	data(){
+		return{
+			imgs:[],
+			bio: "@nenekodev / ネネコ / 捏捏口 / <s>初夏寧寧子</s>",
+			avatar: "https://avatars3.githubusercontent.com/u/13192856"
+		}
+	},
+	created () {
+		document.title = 'OmniGalleries';
+
+	},
+	mounted(){
+		axios
+		.get('./images.json')
+		.then(response => {
+			this.imgs=response.data.imgs;
+		});
+		$('.avt').removeClass('hide');
+		$('.avt').addClass('animate');
+		$('section').addClass('animate1');
+		setTimeout(function(){$('h1').removeClass('hide');$('h1').addClass('animate');},200);
+		setTimeout(function(){$('h3').removeClass('hide');$('h3').addClass('animate');},400);
+		console.log("你不试一下双击头像？")			
+	},
+
+	methods:{
+		changeBio(){
+			this.bio = "嘉然小姐我真的好喜欢你啊!";			
+			this.avatar = "https://s4.ax1x.com/2021/12/08/oW1IW4.jpg";
+		},
+		resetBio(){
+			this.bio = "@nenekodev / ネネコ / 捏捏口 / <s>初夏寧寧子</s>";
+			this.avatar = "https://avatars3.githubusercontent.com/u/13192856";
+		},
+		followDiana(){
+			window.open("https://space.bilibili.com/672328094");
+		}
+	}
+});
+
+app.mount('#app');
+</script>
+</html>
