@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*app-base*/
 html, body {
 	scroll-behavior: smooth;
@@ -58,31 +62,39 @@ body{
 }
 .card{
 	border: none;
-	border-radius: 1.5em;
+	/*border-radius: 1.5em;*/
   overflow: hidden!important;
-  background: #212529;
+  background: #222;
 }
 
 .card-img{
 	border-radius: calc(1.5em - 1px);
-	opacity: 0.5;
+  opacity: 0.5;
   filter: blur(5px);
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -ms-filter: blur(5px);
   -o-filter: blur(5px);
-  transform: scale(1.05);
+  transform: scale(1.10);
 	transition: all .8s cubic-bezier(.22,.58,.12,.98)
 }
 
 .card-img:hover{
-	opacity: 1;
+  opacity: 1;
   filter: none;
   -webkit-filter: none;
   -moz-filter: none;
   -ms-filter: none;
   -o-filter: none;
-  transform: scale(1)
+  transform: scale(1.01)
+}
+
+.card-img-overlay{
+  left: 2em;
+  top: 2em;
+  width: 80%;
+  pointer-events:none;
+  transition: all .8s cubic-bezier(.22,.58,.12,.98)
 }
 
 .card-img:hover~.card-img-overlay{
@@ -96,14 +108,6 @@ body{
 
 .card-img:hover~.card{
   background: #fff;
-}
-
-.card-img-overlay{
-	left: 2em;
-	top: 2em;
-	width: 80%;	
-	pointer-events:none;	
-	transition: all .8s cubic-bezier(.22,.58,.12,.98)
 }
 
 #brandimg{
