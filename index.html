@@ -17,12 +17,19 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(https://pic.imgdb.cn/item/6648dbdfd9c307b7e926acfc/HK23.jpg)!important;
+			opacity: 0.4;
+			background-image: url("https://pic.imgdb.cn/item/93585/liuying.jpg")!important;
 			background-size: cover;
 			background-position: center;
+			background-repeat: no-repeat;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+		}
+		@media(max-width: 768px){
+			.background {
+				background-position: left -280px bottom;
+			}
 		}
 		.mask {
 			position: absolute;
@@ -84,7 +91,7 @@
 		}
 		@keyframes slideinBG{
 			0%{transform: translate(0px,-50px);-webkit-transform: translate(0px,-50px);opacity: 0}
-			to{transform: translate(0px,0px);-webkit-transform: translate(0px,0px);opacity: 1}
+			to{transform: translate(0px,0px);-webkit-transform: translate(0px,0px);opacity: 0.4}
 		}
 		@keyframes draw {
 		to {
@@ -134,6 +141,7 @@
 		}
 		.maintext{
 			color: #fff;
+			font-size: 14px;
 		}
 		.subtext{
 			color: #aaa;
@@ -185,16 +193,13 @@
 			.svg-canvas{
 				height: 25vh;
 			}
-/* 			#app{
-				background-position: right;
-			} */
 		}
 	</style>
 </head>
 <body>
 	<div id="app">
 	<div id="background" class="background hidden">
-		<img id="background-img" src="https://pic.imgdb.cn/item/6648dbdfd9c307b7e926acfc/HK23.jpg" class="hidden">
+		<img id="background-img" src="https://pic.imgdb.cn/item/93585/liuying.jpg" class="hidden">
 	</div>
 	<div id="mask" class="mask">
 		<div class="mask-content">
@@ -464,13 +469,14 @@
 		</div>
 		<div class="col-6 col-lg-3" style="display:flex; align-items: flex-end; justify-content: flex-end;">
 			<div class="maintext" style="text-align: right;">
-<!-- 				<h6>当我凝望天空的时候<br>眼睛里是整片宇宙</h6>
-				<h6 style="color: #ccc;">文昌，2022.7</h6> -->
-				<h6>你家地板沒涼夠<br>浪裏夕陽 我看不透</h6>
-				<h6 class="subtext">Hongkong SAR，2023.2</h6>
+				<h6>当晴空还远的今天里<br>我等你再为我 为我一笑</h6>
+				<h6 class="subtext">Shanghai，2024.6</h6>
 			</div>		
 		</div>
 	</div>
+	<!-- <section>
+		<div></div>
+	</section> -->
 	</div>
 </body>
 
