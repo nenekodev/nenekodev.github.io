@@ -520,15 +520,15 @@ function removeMask() {
 	}
 }
 
-if (localStorage.getItem("bgLoaded") != "True") {
-	document.getElementById("background-img").onload = function() {
-		removeMask()
-		localStorage.setItem("bgLoaded", "True");
-	} 
-} else {
-	setTimeout(function(){removeMask()},500);
-}
+// if (localStorage.getItem("bgLoaded") != "True") {
+// 	document.getElementById("background-img").onload = function() {
+// 		removeMask()
+// 		localStorage.setItem("bgLoaded", "True");
+// 	} 
+// } else {
+// 	setTimeout(function(){removeMask()},500);
+// }
 
-
+setTimeout(function(){removeMask()},500);
 </script>
 </html>
