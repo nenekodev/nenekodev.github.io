@@ -87,7 +87,7 @@
         { "name": "鹤岗市", "altName": "Hegang", "visited": false, "firstVisited": "" },
         { "name": "双鸭山市", "altName": "Shuangyashan", "visited": false, "firstVisited": "" },
         { "name": "大庆市", "altName": "Daqing", "visited": false, "firstVisited": "" },
-        { "name": "伊春市", "altName": "Yichun, Heilongjiang", "visited": false, "firstVisited": "" },
+        { "name": "伊春市", "altName": ", Heilongjiang", "visited": false, "firstVisited": "" },
         { "name": "佳木斯市", "altName": "Kiamusze", "visited": false, "firstVisited": "" },
         { "name": "七台河市", "altName": "Qitaihe", "visited": false, "firstVisited": "" },
         { "name": "牡丹江市", "altName": "Mudanjiang", "visited": false, "firstVisited": "" },
@@ -250,7 +250,7 @@
         { "name": "鹰潭市", "altName": "Yingtan", "visited": true, "firstVisited": "2017.08" },
         { "name": "赣州市", "altName": "Ganzhou", "visited": true, "firstVisited": "2025.06" },
         { "name": "吉安市", "altName": "Ji'an", "visited": true, "firstVisited": "2025.06" },
-        { "name": "宜春市", "altName": "Yichun, Jiangxi", "visited": true, "firstVisited": "" },
+        { "name": "宜春市", "altName": "Yichun, Jiangxi", "visited": false, "firstVisited": "" },
         { "name": "抚州市", "altName": "Fuzhou, Jiangxi", "visited": true, "firstVisited": "2017.08" },
         { "name": "上饶市", "altName": "Shangrao", "visited": true, "firstVisited": "2020.07" }
       ]
