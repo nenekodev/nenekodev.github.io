@@ -108,6 +108,7 @@
       padding: 8px 12px;
       border-radius: 5px;
       z-index: 10; /* 低于 #tooltip 但高于 SVG */
+      pointer-events: none;
       -webkit-text-stroke: 10px transparent;
       background: white;
       -webkit-background-clip: text;
@@ -121,6 +122,7 @@
       padding: 8px 12px;
       border-radius: 5px;
       z-index: 20; 
+      pointer-events: none;
     }
     @media (max-width: 768px) {
       .map-container {
