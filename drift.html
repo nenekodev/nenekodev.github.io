@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在人间漂流</title>
+  <style>
+    body { 
+      margin: 0; 
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Source Han Sans CN, Noto Sans CJK SC, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif; 
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2
+    }
+    .map-container {
+      width: 100vw;
+      height: 100vh;
+      overflow-y: scroll;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+    .map-container::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+    #data-overlay {
+      position: fixed;
+      right: -30vw; /* 桌面端初始隐藏 */
+      top: 0;
+      width: 30vw;
+      height: 100vh;
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto; /* 支持内容滚动 */
+    }
+    #data-overlay.visible {
+      right: 0;
+    }
+    #data-overlay h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    #data-overlay ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 10px;
+      display: grid;
+    }
+    #data-overlay li {
+      padding: 5px;
+    }
+    #data-overlay .prefecture-list {
+      margin-left: 0; /* 嵌套列表不缩进 */
+      padding-left: 0;
+      grid-template-columns: repeat(2, 1fr); /* 城市列表也为两列 */
+      gap: 5px;
+    }
+    #data-overlay .prefecture-list li {
+      /*border: 1px solid #ddd; /* 添加边框以区分 */*/
+      border-radius: 4px;
+    } 
+    #data-overlay progress {
+      width: 100%;
+      height: 5px;
+      border-radius: 5px;
+      margin: 0.5em 0;
+    }
+    #data-overlay progress::-webkit-progress-bar {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+    #data-overlay progress::-webkit-progress-value {
+      background-color: #4fb4f7; 
+      border-radius: 5px;
+    }
+    #data-overlay progress::-moz-progress-bar {
+      background-color: #4fb4f7;
+      border-radius: 5px;
+    }
+    #tooltip {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 1000;
+    }
+    .not-visited {
+      color: #ccc;
+    }
+    #visited-percentage {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 3rem;
+      color: #b6dbf5;
+      padding: 8px 12px;
+      border-radius: 5px;
+      z-index: 10; /* 低于 #tooltip 但高于 SVG */
+      -webkit-text-stroke: 10px transparent;
+      background: white;
+      -webkit-background-clip: text;
+    }
+    #visited-count {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      font-size: 1.5em;
+      color: #0075c8;
+      padding: 8px 12px;
+      border-radius: 5px;
+      z-index: 20; 
+    }
+    @media (max-width: 768px) {
+      .map-container {
+        height: 100vh;
+      }
+      #data-overlay {
+        width: 100vw;
+        height: 30vh;
+        top: auto;
+        bottom: -30vh;
+        right: 0;
+        padding: 10px;
+      }
+      #data-overlay.visible {
+        bottom: 0;
+      }
+      #data-overlay h2 {
+        font-size: 16px;
+      }
+      #data-overlay li {
+        font-size: 14px;
+      }
+      #tooltip {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+      #visited-percentage {
+        font-size: 14px;
+        padding: 6px 10px;
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="map-container" id="map-container">
+    <svg id="map"></svg>
+    <div id="visited-percentage"></div>
+    <div id="visited-count"></div>
+    <div id="tooltip"></div>
+  </div>
+  <div id="data-overlay">
+    <h2 id="region-title"></h2>
+    <ul id="region-list"></ul>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>    
+    // 区域列表
+    const regions = [
+      'Border', 
+      'Hebei', 'Shanxi', 'Neimenggu', 
+      'Heilongjiang', 'Jilin', 'Liaoning', 
+      'Shandong', 'Jiangsu', 'Zhejiang', 'Fujian', 'Jiangxi', 'Anhui', 
+      'Henan', 'Hubei', 'Hunan', 'Guangdong', 'Hainan', 'Guangxi', 
+      'Guizhou', 'Yunnan', 'Sichuan', 
+      'Shaanxi', 'Ningxia', 'Gansu', 'Qinghai', 'Xinjiang', 'Tibet', 
+      'Border'
+    ];
+
+    console.log('Regions:', regions); // 调试 regions 列表
+    let cityData = {};
+    let currentRegionIndex = 0;
+
+    Promise.all([
+      fetch('./drift.svg').then(response => response.text()),
+      fetch('./cities.json').then(response => response.json())
+    ])
+      .then(([svgData, jsonData]) => {
+        document.getElementById('map').innerHTML = svgData;
+        cityData = jsonData;
+        initMap();
+      })
+      .catch(error => console.error('Error loading data:', error));
+
+    function highlightRegion(regionId) {
+      const svg = document.getElementById('map');
+      const allElements = svg.querySelectorAll('g:not([id="China"],[id="Taiwan"],[id="Borders_provinces"],[id="Borders_countries"])');
+      allElements.forEach(el => {
+        if (el.id === regionId || el.id === 'Borders_countries' || (regionId === 'Border' && el.tagName === 'g' )) {
+          gsap.to(el, {
+            opacity: 1,
+            filter: 'none',
+            duration: 0.4,
+            ease: 'sine.out'
+          });
+        } else {
+          gsap.to(el, {
+            opacity: 0.1,
+            filter: 'grayscale(1)',
+            duration: 0.4,
+            ease: 'sine.out'
+          });
+        }
+      });
+    }
+
+    function focusRegion(regionId) {
+      if (!regionId || regionId === 'undefined') {
+        console.warn('Invalid regionId:', regionId);
+        return;
+      }
+
+      const svg = document.getElementById('map');
+      const region = svg.querySelector(`#${regionId}`);
+      if (!region) {
+        console.warn(`Region ${regionId} not found in SVG`);
+        return;
+      }
+
+      // 获取边界框并计算 viewBox
+      const bbox = region.getBBox();
+      const padding = 0.28; // 边界填充
+      const viewBoxWidth = bbox.width * (1 + padding);
+      const viewBoxHeight = bbox.height * (1 + padding);
+      const viewBoxX = bbox.x - (bbox.width * padding / 2);
+      const viewBoxY = bbox.y - (bbox.height * padding / 2);
+
+      document.getElementById('tooltip').innerHTML = regionId === 'Border' ? '向下滚动或点击省份以浏览<br>Scroll or touch to Start' : `双击返回全图<br>Double click to return`;
+
+      const regionTitle = document.getElementById('region-title');
+      const regionList = document.getElementById('region-list');
+      const label = region.getAttribute('inkscape:label') || regionId;
+
+      // 控制数据图层、地图尺寸和可见度动画
+      const mapContainer = document.querySelector('.map-container');
+      const dataOverlay = document.getElementById('data-overlay');
+      const isMobile = window.innerWidth <= 768;
+
+      const mapAnimation = gsap.timeline();
+      if (regionId === 'Border') {
+        regionTitle.innerHTML = '';
+        regionList.innerHTML = '';
+
+        mapAnimation.to(regionList, {
+          opacity: 0,
+          duration: 0.2,
+          ease: 'sine.out',
+          onComplete: () => {
+            regionList.innerHTML = '';
+          }
+        })
+        .to(dataOverlay, {
+          [isMobile ? 'bottom' : 'right']: isMobile ? '-30vh' : '-30vw',
+          duration: 0.6,
+          ease: 'power4.out',
+          onComplete: () => dataOverlay.classList.remove('visible')
+        })
+        .to(mapContainer, {
+          [isMobile ? 'height' : 'width']: isMobile ? '100vh' : '100vw',
+          duration: 0.8,
+          ease: 'power4.out'
+        }, 0)
+        .to(svg, {
+          attr: { viewBox: `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}` },
+          duration: 0.6,
+          ease: 'sine.out'
+        }, 0);
+      } else {
+        const regionsData = cityData[regionId] || [];
+        const newContent = regionsData.map(region => {
+          const firstVisited = region.visited ? `<span>${region.firstVisited}</span>` : 'TBC...';
+          let prefectureList = '';
+          let progress = '';
+          let stats = '';
+          if (region.prefectures) {
+            const totalCities = region.prefectures.length;
+            const visitedCount = region.prefectures.filter(city => city.visited).length;
+            const visitedPercentage = totalCities > 0 ? ((visitedCount / totalCities) * 100).toFixed(1) : 0;
+            progress = `<progress value="${visitedPercentage}" max="100"></progress>`;
+            stats = `<span>${visitedPercentage}% (${visitedCount}/${totalCities})</span>`
+            prefectureList = `
+              <ul class="prefecture-list">
+                ${region.prefectures.map(city => `
+                  <li ${city.visited ? 'class="visited"' : 'class="not-visited"'}>
+                    <h3><b>${city.name}</b></h3>
+                    <h5>${city.altName}</h5>
+                    <small>${city.visited && city.firstVisited ? `${city.firstVisited}` : 'TBC...'}</small>
+                  </li>
+                `).join('')}
+              </ul>
+            `;
+          }
+          return `
+            <li>
+              <div ${region.visited ? 'class="visited"' : 'class="not-visited"'} style="margin-bottom:1em">
+                <h1><b>${region.name}</b></h1>
+                <h3>${region.altName}</h3>
+                <div class="details">
+                  <div style="display:flex;justify-content:space-between">${firstVisited}${stats}</div>
+                  ${progress}
+                  ${prefectureList}
+                </div>
+              </div>
+            </li>
+          `;
+        }).join('');
+
+        mapAnimation.to(regionList, {
+          opacity: 0,
+          duration: 0.3,
+          ease: 'power4.out',
+          onComplete: () => {
+            regionList.innerHTML = newContent;
+            regionList.style.opacity = '1';
+            const listItems = regionList.querySelectorAll('li');
+            if (listItems.length > 0) {
+              gsap.fromTo(listItems, {
+                opacity: 0,
+                x: -10
+              }, {
+                opacity: 1,
+                x: 0,
+                duration: 0.3,
+                stagger: 0.05,
+                ease: 'power4.out'
+              });
+            } 
+          }
+        })
+        .to(dataOverlay, {
+          [isMobile ? 'bottom' : 'right']: 0,
+          duration: 0.6,
+          ease: 'power4.out',
+          onStart: () => dataOverlay.classList.add('visible')
+        })
+        .to(mapContainer, {
+          [isMobile ? 'height' : 'width']: isMobile ? '70vh' : '70vw',
+          duration: 0.8,
+          ease: 'power4.out'
+        }, 0)
+        .to(svg, {
+          attr: { viewBox: `${viewBoxX} ${viewBoxY} ${viewBoxWidth} ${viewBoxHeight}` },
+          duration: 0.6,
+          ease: 'sine.out'
+        }, 0);
+      }
+
+      // 高亮当前区域
+      highlightRegion(regionId);
+    }
+
+    // 防抖函数
+    function debounce(func, wait) {
+      let timeout;
+      return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+    }
+
+    function initMap() {
+      const svg = document.getElementById('map');
+
+      // 计算总访问百分比
+      let visitedCount = 0;
+      let totalCount = 0;
+      Object.values(cityData).forEach(regions => {
+        regions.forEach(region => {
+          if (region.prefectures) {
+            totalCount += region.prefectures.length;
+            visitedCount += region.prefectures.filter(city => city.visited).length;
+          } else {
+            totalCount += 1; // 直辖市或特别行政区
+            visitedCount += region.visited ? 1 : 0;
+          }
+        });
+      });
+
+      const percentageAnimation = gsap.timeline();
+      const visitedPercentage = totalCount > 0 ? ((visitedCount / totalCount) * 100).toFixed(2) : 0;
+
+      // 动态加载百分比动画
+      const percentageDisplay = document.getElementById('visited-percentage');
+      const visitedDisplay = document.getElementById('visited-count');
+      const percentageObj = { value: 0 };
+      const visitedObj = { count: 0 };
+      gsap.to([percentageObj, visitedObj], {
+        value: visitedPercentage,
+        count: visitedCount,
+        duration: 1,
+        ease: 'power2.out',
+        onUpdate: () => {
+          percentageDisplay.innerHTML = `<h1><b><i>${percentageObj.value.toFixed(2)}%</i></b></h1>`;
+          visitedDisplay.innerHTML = `<p>${visitedObj.count.toFixed(0)}/<b>${totalCount}</b></p>`;
+        },
+        delay: 0.2 // 页面加载后 0.5s 开始动画
+      });
+
+      // 初始化聚焦全图
+      focusRegion('Border');
+
+      // 单击和双击事件处理
+      // 点击聚焦
+      svg.querySelectorAll('g:not([id="China"],[id="Taiwan"],[id="Borders_provinces"],[id="Borders_countries"])').forEach(element => {
+        element.style.cursor = 'pointer';
+        element.addEventListener('click', (event) => {
+          if (event.detail == 1) {
+            const regionId = element.id;
+            currentRegionIndex = regions.indexOf(regionId);
+            focusRegion(regionId);
+          }
+        });
+      });
+
+      // 双击跳转回 Border
+      svg.addEventListener('dblclick', (event) => {
+        currentRegionIndex = 0;
+        focusRegion('Border');
+      });
+
+      // 滚轮事件（带防抖）
+      const handleWheel = debounce((event) => {
+        const delta = event.deltaY !== undefined ? event.deltaY : event.detail; // 支持滚轮和滑动
+        const direction = delta > 0 ? 1 : -1;
+        currentRegionIndex = Math.max(0, Math.min(regions.length - 1, currentRegionIndex + direction));
+        const regionId = regions[currentRegionIndex];
+        console.log('Wheel/Swipe: currentRegionIndex=', currentRegionIndex, 'regionId=', regionId);
+        focusRegion(regions[currentRegionIndex]);
+      }, 300);
+
+      document.getElementById('map-container').addEventListener('wheel', handleWheel);
+
+      if (window.innerWidth <= 768) {
+        let touchStartY = 0;
+        document.getElementById('map-container').addEventListener('touchstart', (event) => {
+          touchStartY = event.touches[0].clientY;
+        });
+        document.getElementById('map-container').addEventListener('touchmove', (event) => {
+          const touchEndY = event.touches[0].clientY;
+          const deltaY = touchStartY - touchEndY; // 向上滑动 deltaY > 0，向下滑动 deltaY < 0
+          if (Math.abs(deltaY) > 30) { // 设置阈值避免误触
+            handleWheel({ detail: deltaY }); // 模拟滚轮事件
+            touchStartY = touchEndY; // 更新起始点
+          }
+        });
+      }
+
+      // ScrollTrigger
+      ScrollTrigger.create({
+        trigger: '.map-container',
+        start: 'top top',
+        end: 'bottom bottom',
+        onUpdate: (self) => {
+          const progress = self.progress;
+          const regionIndex = Math.round(progress * (regions.length - 1));
+          if (regionIndex !== currentRegionIndex) {
+            currentRegionIndex = regionIndex;
+            focusRegion(regions[currentRegionIndex]);
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
