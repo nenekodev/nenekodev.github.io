@@ -1,0 +1,672 @@
+{
+  "Hebei": [
+    {
+      "name": "北京市",
+      "altName": "Beijing",
+      "visited": true, 
+      "firstVisited": "2012.7"
+    },
+    {
+      "name": "天津市",
+      "altName": "Tianjin",
+      "visited": true, 
+      "firstVisited": "2018.10"
+    },
+    { 
+      "name": "河北省", 
+      "altName": "Hebei",
+      "visited": true, 
+      "firstVisited": "2020.10",
+      "prefectures": [
+        { "name": "石家庄市", "altName": "Shijiazhuang", "visited": true, "firstVisited": "2023.10" },
+        { "name": "秦皇岛市", "altName": "Qinhuangdao", "visited": true, "firstVisited": "2020.10" },
+        { "name": "邯郸市", "altName": "Handan", "visited": true, "firstVisited": "2024.10" },
+        { "name": "邢台市", "altName": "Xingtai", "visited": true, "firstVisited": "2024.10" },
+        { "name": "保定市", "altName": "Baoding", "visited": true, "firstVisited": "2023.08" },
+        { "name": "张家口市", "altName": "Zhangjiakou", "visited": true, "firstVisited": "2023.08" },
+        { "name": "承德市", "altName": "Chengde", "visited": false, "firstVisited": "" },
+        { "name": "沧州市", "altName": "Cangzhou", "visited": true, "firstVisited": "2023.06" },
+        { "name": "廊坊市", "altName": "Langfang", "visited": true, "firstVisited": "2024.04" },
+        { "name": "衡水市", "altName": "Hengshui", "visited": true, "firstVisited": "2023.06" }
+      ]
+    }
+  ],
+  "Shanxi": [
+    {
+      "name": "山西省", 
+      "altName": "Shanxi",
+      "visited": true, 
+      "firstVisited": "2023.07",
+      "prefectures": [
+        { "name": "太原市", "altName": "Taiyuan", "visited": true, "firstVisited": "2023.07" },
+        { "name": "大同市", "altName": "Datong", "visited": true, "firstVisited": "2023.08" },
+        { "name": "阳泉市", "altName": "Yangquan", "visited": true, "firstVisited": "2025.01" },
+        { "name": "长治市", "altName": "Changzhi", "visited": true, "firstVisited": "2023.07" },
+        { "name": "晋城市", "altName": "Jincheng", "visited": true, "firstVisited": "2023.07" },
+        { "name": "朔州市", "altName": "Shuozhou", "visited": true, "firstVisited": "2023.08" },
+        { "name": "晋中市", "altName": "Jinzhong", "visited": true, "firstVisited": "2025.01" },
+        { "name": "运城市", "altName": "Yuncheng", "visited": false, "firstVisited": "" },
+        { "name": "忻州市", "altName": "Xinzhou", "visited": true, "firstVisited": "2023.07" },
+        { "name": "临汾市", "altName": "Linfen", "visited": false, "firstVisited": "" },
+        { "name": "吕梁市", "altName": "Lvliang", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Neimenggu": [
+    {
+      "name": "内蒙古自治区", 
+      "altName": "Neimenggu",
+      "visited": true, 
+      "firstVisited": "2023.08",
+      "prefectures": [
+        { "name": "呼和浩特市", "altName": "Hohhot", "visited": true, "firstVisited": "2023.08" },
+        { "name": "包头市", "altName": "Baotou", "visited": false, "firstVisited": "" },
+        { "name": "乌海市", "altName": "Wuhai", "visited": false, "firstVisited": "" },
+        { "name": "赤峰市", "altName": "Chifeng", "visited": false, "firstVisited": "" },
+        { "name": "通辽市", "altName": "Tongliao", "visited": false, "firstVisited": "" },
+        { "name": "鄂尔多斯市", "altName": "Ordos", "visited": false, "firstVisited": "" },
+        { "name": "呼伦贝尔市", "altName": "Hulunbuir", "visited": false, "firstVisited": "" },
+        { "name": "巴彦淖尔市", "altName": "Bayannur", "visited": false, "firstVisited": "" },
+        { "name": "乌兰察布市", "altName": "Ulanqab", "visited": true, "firstVisited": "2023.08" },
+        { "name": "兴安盟", "altName": "Hinggan", "visited": false, "firstVisited": "" },
+        { "name": "锡林郭勒盟", "altName": "Xilingol", "visited": false, "firstVisited": "" },
+        { "name": "阿拉善盟", "altName": "Alxa", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Heilongjiang": [
+    {
+      "name": "黑龙江省", 
+      "altName": "Heilongjiang",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "哈尔滨市", "altName": "Harbin", "visited": false, "firstVisited": "" },
+        { "name": "齐齐哈尔市", "altName": "Qiqihar", "visited": false, "firstVisited": "" },
+        { "name": "鸡西市", "altName": "Jixi", "visited": false, "firstVisited": "" },
+        { "name": "鹤岗市", "altName": "Hegang", "visited": false, "firstVisited": "" },
+        { "name": "双鸭山市", "altName": "Shuangyashan", "visited": false, "firstVisited": "" },
+        { "name": "大庆市", "altName": "Daqing", "visited": false, "firstVisited": "" },
+        { "name": "伊春市", "altName": "Yichun, Heilongjiang", "visited": false, "firstVisited": "" },
+        { "name": "佳木斯市", "altName": "Kiamusze", "visited": false, "firstVisited": "" },
+        { "name": "七台河市", "altName": "Qitaihe", "visited": false, "firstVisited": "" },
+        { "name": "牡丹江市", "altName": "Mudanjiang", "visited": false, "firstVisited": "" },
+        { "name": "黑河市", "altName": "Heihe", "visited": false, "firstVisited": "" },
+        { "name": "绥化市", "altName": "Suihua", "visited": false, "firstVisited": "" },
+        { "name": "大兴安岭地区", "altName": "Daxing'anling", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Jilin": [
+    {
+      "name": "吉林省", 
+      "altName": "Jilin",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "长春市", "altName": "Changchun", "visited": false, "firstVisited": "" },
+        { "name": "吉林市", "altName": "Jilin", "visited": false, "firstVisited": "" },
+        { "name": "四平市", "altName": "Siping", "visited": false, "firstVisited": "" },
+        { "name": "辽源市", "altName": "Liaoyuan", "visited": false, "firstVisited": "" },
+        { "name": "通化市", "altName": "Tonghua", "visited": false, "firstVisited": "" },
+        { "name": "白山市", "altName": "Baishan", "visited": false, "firstVisited": "" },
+        { "name": "松原市", "altName": "Songyuan", "visited": false, "firstVisited": "" },
+        { "name": "白城市", "altName": "Baicheng", "visited": false, "firstVisited": "" },
+        { "name": "延边朝鲜族自治州", "altName": "Yanbian", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Liaoning": [
+    {
+      "name": "辽宁省", 
+      "altName": "Liaoning",
+      "visited": true, 
+      "firstVisited": "2025.04",
+      "prefectures": [
+        { "name": "沈阳市", "altName": "Shenyan", "visited": true, "firstVisited": "2025.04" },
+        { "name": "大连市", "altName": "Dalian", "visited": false, "firstVisited": "" },
+        { "name": "鞍山市", "altName": "Anshan", "visited": true, "firstVisited": "2025.04" },
+        { "name": "抚顺市", "altName": "Fushun", "visited": true, "firstVisited": "2025.04" },
+        { "name": "本溪市", "altName": "Benxi", "visited": true, "firstVisited": "2025.04" },
+        { "name": "丹东市", "altName": "Dandong", "visited": false, "firstVisited": "" },
+        { "name": "锦州市", "altName": "Jinzhou", "visited": false, "firstVisited": "" },
+        { "name": "营口市", "altName": "Yingkou", "visited": false, "firstVisited": "" },
+        { "name": "阜新市", "altName": "Fuxin", "visited": false, "firstVisited": "" },
+        { "name": "辽阳市", "altName": "Liaoyang", "visited": true, "firstVisited": "2025.04" },
+        { "name": "盘锦市", "altName": "Panjin", "visited": false, "firstVisited": "" },
+        { "name": "铁岭市", "altName": "Tieling", "visited": false, "firstVisited": "" },
+        { "name": "朝阳市", "altName": "Chaoyang", "visited": false, "firstVisited": "" },
+        { "name": "葫芦岛市", "altName": "Huludao", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Shandong": [
+    {
+      "name": "山东省", 
+      "altName": "Shandong",
+      "visited": true, 
+      "firstVisited": "2018.09",
+      "prefectures": [
+        { "name": "济南市", "altName": "Jinan", "visited": true, "firstVisited": "2018.10" },
+        { "name": "青岛市", "altName": "Qingdao", "visited": true, "firstVisited": "2018.09" },
+        { "name": "淄博市", "altName": "Zibo", "visited": true, "firstVisited": "2020.09" },
+        { "name": "枣庄市", "altName": "Zaozhuang", "visited": true, "firstVisited": "2024.04" },
+        { "name": "东营市", "altName": "Dongying", "visited": true, "firstVisited": "2023.06" },
+        { "name": "烟台市", "altName": "Yantai", "visited": true, "firstVisited": "2019.05" },
+        { "name": "潍坊市", "altName": "Weifang", "visited": true, "firstVisited": "2023.05" },
+        { "name": "济宁市", "altName": "Jining", "visited": true, "firstVisited": "2024.04" },
+        { "name": "泰安市", "altName": "Tai'an", "visited": true, "firstVisited": "2024.04" },
+        { "name": "威海市", "altName": "Weihai", "visited": true, "firstVisited": "2018.11" },
+        { "name": "日照市", "altName": "Rizhao", "visited": true, "firstVisited": "2019.09" },
+        { "name": "临沂市", "altName": "Linyi", "visited": true, "firstVisited": "2019.09" },
+        { "name": "德州市", "altName": "Dezhou", "visited": true, "firstVisited": "2023.06" },
+        { "name": "聊城市", "altName": "Liaocheng", "visited": true, "firstVisited": "2023.07" },
+        { "name": "滨州市", "altName": "Binzhou", "visited": true, "firstVisited": "2023.06" },
+        { "name": "菏泽市", "altName": "Heze", "visited": true, "firstVisited": "2023.11" }
+      ]
+    }
+  ],
+  "Jiangsu": [
+    {
+      "name": "上海市",
+      "altName": "Shanghai",
+      "visited": true, 
+      "firstVisited": "2019.09"
+    },
+    {
+      "name": "江苏省", 
+      "altName": "Jiangsu",
+      "visited": true, 
+      "firstVisited": "2019.05",
+      "prefectures": [
+        { "name": "南京市", "altName": "Nanjing", "visited": true, "firstVisited": "2019.05" },
+        { "name": "无锡市", "altName": "Wuxi", "visited": true, "firstVisited": "2023.05" },
+        { "name": "徐州市", "altName": "Xuzhou", "visited": true, "firstVisited": "2021.06" },
+        { "name": "常州市", "altName": "Changzhou", "visited": true, "firstVisited": "2023.05" },
+        { "name": "苏州市", "altName": "Suzhou, Jiangsu", "visited": true, "firstVisited": "2019.09" },
+        { "name": "南通市", "altName": "Nantong", "visited": true, "firstVisited": "2023.05" },
+        { "name": "连云港市", "altName": "Lianyungang", "visited": true, "firstVisited": "2019.05" },
+        { "name": "淮安市", "altName": "Huai'an", "visited": true, "firstVisited": "2023.05" },
+        { "name": "盐城市", "altName": "Yancheng", "visited": true, "firstVisited": "2023.05" },
+        { "name": "扬州市", "altName": "Yangzhou", "visited": true, "firstVisited": "2020.08" },
+        { "name": "镇江市", "altName": "Zhenjiang", "visited": true, "firstVisited": "2021.01" },
+        { "name": "泰州市", "altName": "Taizhou, Jiangsu", "visited": true, "firstVisited": "2023.05" },
+        { "name": "宿迁市", "altName": "Suqian", "visited": true, "firstVisited": "2023.05" }
+      ]
+    }
+  ],
+  "Zhejiang": [
+    {
+      "name": "浙江省", 
+      "altName": "Zhejiang",
+      "visited": true, 
+      "firstVisited": "2019.05",
+      "prefectures": [
+        { "name": "杭州市", "altName": "Hangzhou", "visited": true, "firstVisited": "2019.05" },
+        { "name": "宁波市", "altName": "Ningbo", "visited": true, "firstVisited": "2024.11" },
+        { "name": "温州市", "altName": "Wenzhou", "visited": true, "firstVisited": "2022.06" },
+        { "name": "嘉兴市", "altName": "Jiaxing", "visited": true, "firstVisited": "2023.07" },
+        { "name": "湖州市", "altName": "Huzhou", "visited": true, "firstVisited": "2025.06" },
+        { "name": "绍兴市", "altName": "Shaoxing", "visited": true, "firstVisited": "2025.06" },
+        { "name": "金华市", "altName": "Jinhua", "visited": true, "firstVisited": "2025.06" },
+        { "name": "衢州市", "altName": "Quzhou", "visited": true, "firstVisited": "2022.06" },
+        { "name": "舟山市", "altName": "Zhoushan", "visited": false, "firstVisited": "" },
+        { "name": "台州市", "altName": "Taizhou, Zhejiang", "visited": true, "firstVisited": "2025.06" },
+        { "name": "丽水市", "altName": "Lishui", "visited": true, "firstVisited": "2022.06" }
+      ]
+    }
+  ],
+  "Fujian": [
+    {
+      "name": "福建省", 
+      "altName": "Fujian",
+      "visited": true, 
+      "firstVisited": "2017.08",
+      "prefectures": [
+        { "name": "福州市", "altName": "Fuzhou, Fujian", "visited": true, "firstVisited": "2022.06" },
+        { "name": "厦门市", "altName": "Xiamen", "visited": true, "firstVisited": "2017.08" },
+        { "name": "莆田市", "altName": "Putian", "visited": false, "firstVisited": "" },
+        { "name": "三明市", "altName": "Sanming", "visited": true, "firstVisited": "2017.08" },
+        { "name": "泉州市", "altName": "Quanzhou", "visited": false, "firstVisited": "" },
+        { "name": "漳州市", "altName": "Zhangzhou", "visited": true, "firstVisited": "2017.08" },
+        { "name": "南平市", "altName": "Nanping", "visited": true, "firstVisited": "2017.08" },
+        { "name": "龙岩市", "altName": "Longyan", "visited": true, "firstVisited": "2017.08" },
+        { "name": "宁德市", "altName": "Ningde", "visited": true, "firstVisited": "2022.06" }
+      ]
+    }
+  ],
+  "Jiangxi": [
+    {
+      "name": "江西省", 
+      "altName": "Jiangxi",
+      "visited": true, 
+      "firstVisited": "2017.08",
+      "prefectures": [
+        { "name": "南昌市", "altName": "Nanchang", "visited": true, "firstVisited": "2020.07" },
+        { "name": "景德镇市", "altName": "Jingdezhen", "visited": false, "firstVisited": "" },
+        { "name": "萍乡市", "altName": "Pingxiang", "visited": false, "firstVisited": "" },
+        { "name": "九江市", "altName": "Jiujiang", "visited": true, "firstVisited": "2023.10" },
+        { "name": "新余市", "altName": "Xinyu", "visited": false, "firstVisited": "" },
+        { "name": "鹰潭市", "altName": "Yingtan", "visited": true, "firstVisited": "2017.08" },
+        { "name": "赣州市", "altName": "Ganzhou", "visited": true, "firstVisited": "2025.06" },
+        { "name": "吉安市", "altName": "Ji'an", "visited": true, "firstVisited": "2025.06" },
+        { "name": "宜春市", "altName": "Yichun, Jiangxi", "visited": true, "firstVisited": "" },
+        { "name": "抚州市", "altName": "Fuzhou, Jiangxi", "visited": true, "firstVisited": "2017.08" },
+        { "name": "上饶市", "altName": "Shangrao", "visited": true, "firstVisited": "2020.07" }
+      ]
+    }
+  ],
+  "Anhui": [
+    {
+      "name": "安徽省", 
+      "altName": "Anhui",
+      "visited": true, 
+      "firstVisited": "2020.07",
+      "prefectures": [
+        { "name": "合肥市", "altName": "Hefei", "visited": true, "firstVisited": "2024.12" },
+        { "name": "芜湖市", "altName": "Wuhu", "visited": true, "firstVisited": "2022.06" },
+        { "name": "蚌埠市", "altName": "Bengbu", "visited": true, "firstVisited": "2024.06" },
+        { "name": "淮南市", "altName": "Huainan", "visited": true, "firstVisited": "2024.06" },
+        { "name": "马鞍山市", "altName": "Ma'anshan", "visited": true, "firstVisited": "2022.08" },
+        { "name": "淮北市", "altName": "Huaibei", "visited": true, "firstVisited": "2023.11" },
+        { "name": "铜陵市", "altName": "Tongling", "visited": true, "firstVisited": "2025.06" },
+        { "name": "安庆市", "altName": "Anqing", "visited": true, "firstVisited": "2025.06" },
+        { "name": "黄山市", "altName": "Huangshan", "visited": true, "firstVisited": "2020.07" },
+        { "name": "滁州市", "altName": "Chuzhou", "visited": true, "firstVisited": "2025.05" },
+        { "name": "阜阳市", "altName": "Fuyang", "visited": true, "firstVisited": "2024.12" },
+        { "name": "宿州市", "altName": "Suzhou, Anhui", "visited": true, "firstVisited": "2023.11" },
+        { "name": "六安市", "altName": "Lu'an", "visited": true, "firstVisited": "2024.12" },
+        { "name": "亳州市", "altName": "Bozhou", "visited": true, "firstVisited": "2023.11" },
+        { "name": "池州市", "altName": "Chizhou", "visited": true, "firstVisited": "2025.05" },
+        { "name": "宣城市", "altName": "Xuancheng", "visited": true, "firstVisited": "2022.06" }
+      ]
+    }
+  ],
+  "Henan": [
+    {
+      "name": "河南省", 
+      "altName": "Henan",
+      "visited": true, 
+      "firstVisited": "2021.07",
+      "prefectures": [
+        { "name": "郑州市", "altName": "Zhengzhou", "visited": true, "firstVisited": "2021.07" },
+        { "name": "开封市", "altName": "Kaifeng", "visited": true, "firstVisited": "2025.04" },
+        { "name": "洛阳市", "altName": "Luoyang", "visited": true, "firstVisited": "2025.04" },
+        { "name": "平顶山市", "altName": "Pingdingshan", "visited": true, "firstVisited": "2025.04" },
+        { "name": "安阳市", "altName": "Anyang", "visited": true, "firstVisited": "2023.07" },
+        { "name": "鹤壁市", "altName": "Hebi", "visited": true, "firstVisited": "2023.07" },
+        { "name": "新乡市", "altName": "Xinxiang", "visited": true, "firstVisited": "2023.07" },
+        { "name": "焦作市", "altName": "Jiaozuo", "visited": true, "firstVisited": "2023.07" },
+        { "name": "濮阳市", "altName": "Puyang", "visited": true, "firstVisited": "2023.07" },
+        { "name": "许昌市", "altName": "Xuchang", "visited": true, "firstVisited": "2021.07" },
+        { "name": "漯河市", "altName": "Luohe", "visited": true, "firstVisited": "2025.04" },
+        { "name": "三门峡市", "altName": "Sanmenxia", "visited": false, "firstVisited": "" },
+        { "name": "南阳市", "altName": "Nanyang", "visited": true, "firstVisited": "2025.03" },
+        { "name": "商丘市", "altName": "Shangqiu", "visited": true, "firstVisited": "2023.11" },
+        { "name": "信阳市", "altName": "Xinyang", "visited": true, "firstVisited": "2021.07" },
+        { "name": "周口市", "altName": "Zhoukou", "visited": true, "firstVisited": "2021.07" },
+        { "name": "驻马店市", "altName": "Zhumadian", "visited": true, "firstVisited": "2021.07" },
+        { "name": "济源市", "altName": "Jiyuan", "visited": true, "firstVisited": "2023.07" }
+      ]
+    }
+  ],
+  "Hubei": [
+    {
+      "name": "湖北省", 
+      "altName": "Hubei",
+      "visited": true, 
+      "firstVisited": "2000.02",
+      "prefectures": [
+        { "name": "武汉市", "altName": "Wuhan", "visited": true, "firstVisited": "2012.07" },
+        { "name": "黄石市", "altName": "Huangshi", "visited": true, "firstVisited": "2023.12" },
+        { "name": "十堰市", "altName": "Shiyan", "visited": true, "firstVisited": "2000.02" },
+        { "name": "宜昌市", "altName": "Yichang", "visited": true, "firstVisited": "2009.05" },
+        { "name": "襄阳市", "altName": "Xiangyang", "visited": true, "firstVisited": "2008.02" },
+        { "name": "鄂州市", "altName": "Ezhou", "visited": true, "firstVisited": "2023.12" },
+        { "name": "荆门市", "altName": "Jingmen", "visited": false, "firstVisited": "" },
+        { "name": "孝感市", "altName": "Xiaogan", "visited": false, "firstVisited": "" },
+        { "name": "荆州市", "altName": "Jingzhou", "visited": true, "firstVisited": "2009.05" },
+        { "name": "黄冈市", "altName": "Huanggang", "visited": true, "firstVisited": "2023.12" },
+        { "name": "咸宁市", "altName": "Xianning", "visited": false, "firstVisited": "" },
+        { "name": "随州市", "altName": "Suizhou", "visited": true, "firstVisited": "2021.07" },
+        { "name": "恩施土家族苗族自治州", "altName": "Enshi", "visited": false, "firstVisited": "" },
+        { "name": "仙桃市", "altName": "Xiantao", "visited": false, "firstVisited": "" },
+        { "name": "天门市", "altName": "Tianmen", "visited": false, "firstVisited": "" },
+        { "name": "潜江市", "altName": "Qianjiang", "visited": false, "firstVisited": "" },
+        { "name": "神农架林区", "altName": "Shennongjia", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Hunan": [
+    {
+      "name": "湖南省", 
+      "altName": "Hunan",
+      "visited": true, 
+      "firstVisited": "2010.06",
+      "prefectures": [
+        { "name": "长沙市", "altName": "Changsha", "visited": true, "firstVisited": "2010.06" },
+        { "name": "株洲市", "altName": "Zhuzhou", "visited": true, "firstVisited": "2020.05" },
+        { "name": "湘潭市", "altName": "Xiangtan", "visited": false, "firstVisited": "" },
+        { "name": "衡阳市", "altName": "Hengyang", "visited": true, "firstVisited": "2020.06" },
+        { "name": "邵阳市", "altName": "Shaoyang", "visited": true, "firstVisited": "2017.02" },
+        { "name": "岳阳市", "altName": "Yueyang", "visited": true, "firstVisited": "2010.06" },
+        { "name": "常德市", "altName": "Changde", "visited": true, "firstVisited": "2010.06" },
+        { "name": "张家界市", "altName": "Zhangjiajie", "visited": false, "firstVisited": "" },
+        { "name": "益阳市", "altName": "Yiyang", "visited": false, "firstVisited": "" },
+        { "name": "郴州市", "altName": "Chenzhou", "visited": true, "firstVisited": "2018.06" },
+        { "name": "永州市", "altName": "Yongzhou", "visited": false, "firstVisited": "" },
+        { "name": "怀化市", "altName": "Huaihua", "visited": true, "firstVisited": "2024.07" },
+        { "name": "娄底市", "altName": "Loudi", "visited": false, "firstVisited": "" },
+        { "name": "湘西土家族苗族自治州", "altName": "Xiangxi", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Guangdong": [
+    {
+      "name": "广东省", 
+      "altName": "Guangdong",
+      "visited": true, 
+      "firstVisited": "2005.07",
+      "prefectures": [
+        { "name": "广州市", "altName": "Guangzhou", "visited": true, "firstVisited": "2005.07" },
+        { "name": "韶关市", "altName": "Shaoguan", "visited": true, "firstVisited": "2016.04" },
+        { "name": "深圳市", "altName": "Shenzhen", "visited": true, "firstVisited": "2005.07" },
+        { "name": "珠海市", "altName": "Zhuhai", "visited": true, "firstVisited": "2016.11" },
+        { "name": "汕头市", "altName": "Shantou", "visited": true, "firstVisited": "2015.07" },
+        { "name": "佛山市", "altName": "Foshan", "visited": true, "firstVisited": "2016.04" },
+        { "name": "江门市", "altName": "Jiangmen", "visited": true, "firstVisited": "2024.02" },
+        { "name": "湛江市", "altName": "Zhanjiang", "visited": true, "firstVisited": "2012.05" },
+        { "name": "茂名市", "altName": "Maoming", "visited": true, "firstVisited": "2012.05" },
+        { "name": "肇庆市", "altName": "Zhaoqing", "visited": true, "firstVisited": "2014.04" },
+        { "name": "惠州市", "altName": "Huizhou", "visited": true, "firstVisited": "2007.06" },
+        { "name": "梅州市", "altName": "Meizhou", "visited": true, "firstVisited": "2023.01" },
+        { "name": "汕尾市", "altName": "Shanwei", "visited": true, "firstVisited": "2022.06" },
+        { "name": "河源市", "altName": "Heyuan", "visited": true, "firstVisited": "2017.04" },
+        { "name": "阳江市", "altName": "Yangjiang", "visited": true, "firstVisited": "2012.05" },
+        { "name": "清远市", "altName": "Qingyuan", "visited": true, "firstVisited": "2009.08" },
+        { "name": "东莞市", "altName": "Dongguan", "visited": true, "firstVisited": "2006.09" },
+        { "name": "中山市", "altName": "Zhongshan", "visited": true, "firstVisited": "2017.01" },
+        { "name": "潮州市", "altName": "Chaozhou", "visited": true, "firstVisited": "2015.07" },
+        { "name": "揭阳市", "altName": "Jieyang", "visited": true, "firstVisited": "2015.07" },
+        { "name": "云浮市", "altName": "Yunfu", "visited": true, "firstVisited": "2024.02" }
+      ]
+    },
+    {
+      "name": "香港特别行政区",
+      "altName": "Hongkong",
+      "visited": true, 
+      "firstVisited": "2023.02"
+    },
+    {
+      "name": "澳门特别行政区",
+      "altName": "Macau",
+      "visited": false, 
+      "firstVisited": ""
+    }
+  ],
+  "Hainan": [
+    {
+      "name": "海南省", 
+      "altName": "Hainan",
+      "visited": true, 
+      "firstVisited": "2012.05",
+      "prefectures": [
+        { "name": "海口市", "altName": "Haikou", "visited": true, "firstVisited": "2012.05" },
+        { "name": "三亚市", "altName": "Sanya", "visited": true, "firstVisited": "2020.05" },
+        { "name": "三沙市", "altName": "Sansha", "visited": false, "firstVisited": "" },
+        { "name": "儋州市", "altName": "Danzhou", "visited": false, "firstVisited": "" },
+        { "name": "五指山市", "altName": "Wuzhishan", "visited": false, "firstVisited": "" },
+        { "name": "琼海市", "altName": "Qionghai", "visited": true, "firstVisited": "2022.07" },
+        { "name": "文昌市", "altName": "Wenchang", "visited": true, "firstVisited": "2022.07" },
+        { "name": "万宁市", "altName": "Wanning", "visited": true, "firstVisited": "2022.07" },
+        { "name": "东方市", "altName": "Dongfang", "visited": true, "firstVisited": "2017.07" },
+        { "name": "定安县", "altName": "Ding'an", "visited": false, "firstVisited": "" },
+        { "name": "屯昌县", "altName": "Tunchang", "visited": false, "firstVisited": "" },
+        { "name": "澄迈县", "altName": "Chengmai", "visited": true, "firstVisited": "2012.05" },
+        { "name": "临高县", "altName": "Lingao", "visited": true, "firstVisited": "2012.05" },
+        { "name": "白沙黎族自治县", "altName": "Baisha", "visited": false, "firstVisited": "" },
+        { "name": "昌江黎族自治县", "altName": "Changjiang", "visited": true, "firstVisited": "2017.07" },
+        { "name": "乐东黎族自治县", "altName": "Ledong", "visited": false, "firstVisited": "" },
+        { "name": "陵水黎族自治县", "altName": "Lingshui", "visited": true, "firstVisited": "2022.07" },
+        { "name": "保亭黎族苗族自治县", "altName": "Baoting", "visited": false, "firstVisited": "" },
+        { "name": "琼中黎族苗族自治县", "altName": "Qiongzhong", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Guangxi": [
+    {
+      "name": "广西壮族自治区", 
+      "altName": "Guangxi",
+      "visited": true, 
+      "firstVisited": "2017.05",
+      "prefectures": [
+        { "name": "南宁市", "altName": "Nanning", "visited": false, "firstVisited": "" },
+        { "name": "柳州市", "altName": "Liuzhou", "visited": true, "firstVisited": "2017.05" },
+        { "name": "桂林市", "altName": "Guilin", "visited": true, "firstVisited": "2018.08" },
+        { "name": "梧州市", "altName": "Wuzhou", "visited": false, "firstVisited": "" },
+        { "name": "北海市", "altName": "Beihai", "visited": false, "firstVisited": "" },
+        { "name": "防城港市", "altName": "Fangchenggang", "visited": false, "firstVisited": "" },
+        { "name": "钦州市", "altName": "Qinzhou", "visited": false, "firstVisited": "" },
+        { "name": "贵港市", "altName": "Guigang", "visited": false, "firstVisited": "" },
+        { "name": "玉林市", "altName": "Yulin, Guangxi", "visited": false, "firstVisited": "" },
+        { "name": "百色市", "altName": "Baise", "visited": false, "firstVisited": "" },
+        { "name": "贺州市", "altName": "Hezhou", "visited": false, "firstVisited": "" },
+        { "name": "河池市", "altName": "Hechi", "visited": false, "firstVisited": "" },
+        { "name": "来宾市", "altName": "Laibin", "visited": false, "firstVisited": "" },
+        { "name": "崇左市", "altName": "Chongzuo", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Guizhou": [
+    {
+      "name": "贵州省", 
+      "altName": "Guizhou",
+      "visited": true, 
+      "firstVisited": "2018.08",
+      "prefectures": [
+        { "name": "贵阳市", "altName": "Guiyang", "visited": false, "firstVisited": "" },
+        { "name": "六盘水市", "altName": "Liupanshui", "visited": false, "firstVisited": "" },
+        { "name": "遵义市", "altName": "Zunyi", "visited": false, "firstVisited": "" },
+        { "name": "安顺市", "altName": "Anshun", "visited": false, "firstVisited": "" },
+        { "name": "毕节市", "altName": "Bijie", "visited": false, "firstVisited": "" },
+        { "name": "铜仁市", "altName": "Tongren", "visited": false, "firstVisited": "" },
+        { "name": "黔西南布依族苗族自治州", "altName": "Qianxinan", "visited": false, "firstVisited": "" },
+        { "name": "黔东南苗族侗族自治州", "altName": "Qiandongnan", "visited": true, "firstVisited": "2018.08" },
+        { "name": "黔南布依族苗族自治州", "altName": "Qiannan", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Yunnan": [
+    {
+      "name": "云南省", 
+      "altName": "Yunnan",
+      "visited": true, 
+      "firstVisited": "2006.05",
+      "prefectures": [
+        { "name": "昆明市", "altName": "Kunming", "visited": true, "firstVisited": "2006.05" },
+        { "name": "曲靖市", "altName": "Qujing", "visited": false, "firstVisited": "" },
+        { "name": "玉溪市", "altName": "Yuxi", "visited": false, "firstVisited": "" },
+        { "name": "保山市", "altName": "Baoshan", "visited": false, "firstVisited": "" },
+        { "name": "昭通市", "altName": "Zhaotong", "visited": false, "firstVisited": "" },
+        { "name": "丽江市", "altName": "Lijiang", "visited": true, "firstVisited": "2006.05" },
+        { "name": "普洱市", "altName": "Pu'er", "visited": false, "firstVisited": "" },
+        { "name": "临沧市", "altName": "Lincang", "visited": false, "firstVisited": "" },
+        { "name": "楚雄彝族自治州", "altName": "Chuxiong", "visited": false, "firstVisited": "" },
+        { "name": "红河哈尼族彝族自治州", "altName": "Honghe", "visited": false, "firstVisited": "" },
+        { "name": "文山壮族苗族自治州", "altName": "Wenshan", "visited": false, "firstVisited": "" },
+        { "name": "西双版纳傣族自治州", "altName": "Sipsong Panna", "visited": false, "firstVisited": "" },
+        { "name": "大理白族自治州", "altName": "Dali", "visited": true, "firstVisited": "2006.05" },
+        { "name": "德宏傣族景颇族自治州", "altName": "Dehong", "visited": false, "firstVisited": "" },
+        { "name": "怒江傈僳族自治州", "altName": "Nujiang", "visited": false, "firstVisited": "" },
+        { "name": "迪庆藏族自治州", "altName": "Deqen", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Sichuan": [
+    {
+      "name": "重庆市",
+      "altName": "Chongqing",
+      "visited": true, 
+      "firstVisited": "2019.10"
+    },
+    {
+      "name": "四川省", 
+      "altName": "Sichuan",
+      "visited": true, 
+      "firstVisited": "2016.08",
+      "prefectures": [
+        { "name": "成都市", "altName": "Chengdu", "visited": true, "firstVisited": "2016.08" },
+        { "name": "自贡市", "altName": "Zigong", "visited": false, "firstVisited": "" },
+        { "name": "攀枝花市", "altName": "Panzhihua", "visited": false, "firstVisited": "" },
+        { "name": "泸州市", "altName": "Luzhou", "visited": false, "firstVisited": "" },
+        { "name": "德阳市", "altName": "Deyang", "visited": false, "firstVisited": "" },
+        { "name": "绵阳市", "altName": "Mianyang", "visited": false, "firstVisited": "" },
+        { "name": "广元市", "altName": "Guangyuan", "visited": false, "firstVisited": "" },
+        { "name": "遂宁市", "altName": "Suining", "visited": false, "firstVisited": "" },
+        { "name": "内江市", "altName": "Neijiang", "visited": false, "firstVisited": "" },
+        { "name": "乐山市", "altName": "Leshan", "visited": false, "firstVisited": "" },
+        { "name": "南充市", "altName": "Nanchong", "visited": false, "firstVisited": "" },
+        { "name": "眉山市", "altName": "Meishan", "visited": false, "firstVisited": "" },
+        { "name": "宜宾市", "altName": "Yibin", "visited": false, "firstVisited": "" },
+        { "name": "广安市", "altName": "Guangan", "visited": false, "firstVisited": "" },
+        { "name": "达州市", "altName": "Dazhou", "visited": false, "firstVisited": "" },
+        { "name": "雅安市", "altName": "Ya'an", "visited": false, "firstVisited": "" },
+        { "name": "巴中市", "altName": "Bazhong", "visited": false, "firstVisited": "" },
+        { "name": "资阳市", "altName": "Ziyang", "visited": false, "firstVisited": "" },
+        { "name": "阿坝藏族羌族自治州", "altName": "Ngawa", "visited": false, "firstVisited": "" },
+        { "name": "甘孜藏族自治州", "altName": "Garze", "visited": false, "firstVisited": "" },
+        { "name": "凉山彝族自治州", "altName": "Liangshan", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Shaanxi": [
+    {
+      "name": "陕西省", 
+      "altName": "Shaanxi",
+      "visited": true, 
+      "firstVisited": "2018.10",
+      "prefectures": [
+        { "name": "西安市", "altName": "Xi'an", "visited": true, "firstVisited": "2018.10" },
+        { "name": "铜川市", "altName": "Tongchuan", "visited": false, "firstVisited": "" },
+        { "name": "宝鸡市", "altName": "Baoji", "visited": true, "firstVisited": "2018.10" },
+        { "name": "咸阳市", "altName": "Xianyang", "visited": true, "firstVisited": "2024.11" },
+        { "name": "渭南市", "altName": "Weinan", "visited": false, "firstVisited": "" },
+        { "name": "延安市", "altName": "Yan'an", "visited": false, "firstVisited": "" },
+        { "name": "汉中市", "altName": "Hanzhong", "visited": false, "firstVisited": "" },
+        { "name": "榆林市", "altName": "Yulin, Shaanxi", "visited": false, "firstVisited": "" },
+        { "name": "安康市", "altName": "Ankang", "visited": true, "firstVisited": "2024.11" },
+        { "name": "商洛市", "altName": "Shangluo", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Ningxia": [
+    {
+      "name": "宁夏回族自治区", 
+      "altName": "Ningxia",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "银川市", "altName": "Yinchuan", "visited": false, "firstVisited": "" },
+        { "name": "石嘴山市", "altName": "Shizuishan", "visited": false, "firstVisited": "" },
+        { "name": "吴忠市", "altName": "Wuzhong", "visited": false, "firstVisited": "" },
+        { "name": "中卫市", "altName": "Zhongwei", "visited": false, "firstVisited": "" },
+        { "name": "固原市", "altName": "Guyuan", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Gansu": [
+    {
+      "name": "甘肃省", 
+      "altName": "Gansu",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "兰州市", "altName": "Lanzhou", "visited": false, "firstVisited": "" },
+        { "name": "嘉峪关市", "altName": "Jiayuguan", "visited": false, "firstVisited": "" },
+        { "name": "金昌市", "altName": "Jinchang", "visited": false, "firstVisited": "" },
+        { "name": "白银市", "altName": "Baiyin", "visited": false, "firstVisited": "" },
+        { "name": "天水市", "altName": "Tianshui", "visited": false, "firstVisited": "" },
+        { "name": "武威市", "altName": "Wuwei", "visited": false, "firstVisited": "" },
+        { "name": "张掖市", "altName": "Zhangye", "visited": false, "firstVisited": "" },
+        { "name": "平凉市", "altName": "Pingliang", "visited": false, "firstVisited": "" },
+        { "name": "酒泉市", "altName": "Jiuquan", "visited": false, "firstVisited": "" },
+        { "name": "庆阳市", "altName": "Qingyang", "visited": false, "firstVisited": "" },
+        { "name": "定西市", "altName": "Dingxi", "visited": false, "firstVisited": "" },
+        { "name": "陇南市", "altName": "Longnan", "visited": false, "firstVisited": "" },
+        { "name": "临夏回族自治州", "altName": "Linxia", "visited": false, "firstVisited": "" },
+        { "name": "甘南藏族自治州", "altName": "Gannan", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Qinghai": [
+    {
+      "name": "青海省", 
+      "altName": "Qinghai",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "西宁市", "altName": "Xining", "visited": false, "firstVisited": "" },
+        { "name": "海东市", "altName": "Haidong", "visited": false, "firstVisited": "" },
+        { "name": "海北藏族自治州", "altName": "Haibei", "visited": false, "firstVisited": "" },
+        { "name": "黄南藏族自治州", "altName": "Huangnan", "visited": false, "firstVisited": "" },
+        { "name": "海南藏族自治州", "altName": "Hainan", "visited": false, "firstVisited": "" },
+        { "name": "果洛藏族自治州", "altName": "Golog", "visited": false, "firstVisited": "" },
+        { "name": "玉树藏族自治州", "altName": "Yushu", "visited": false, "firstVisited": "" },
+        { "name": "海西蒙古族藏族自治州", "altName": "Haixi", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Xinjiang": [
+    {
+      "name": "新疆维吾尔自治区", 
+      "altName": "Xinjiang",
+      "visited": true, 
+      "firstVisited": "2024.04",
+      "prefectures": [
+        { "name": "乌鲁木齐市", "altName": "Urumqi", "visited": true, "firstVisited": "2024.05" },
+        { "name": "克拉玛依市", "altName": "Karamay", "visited": false, "firstVisited": "" },
+        { "name": "吐鲁番市", "altName": "Turpan", "visited": false, "firstVisited": "" },
+        { "name": "哈密市", "altName": "Hami", "visited": false, "firstVisited": "" },
+        { "name": "昌吉回族自治州", "altName": "Changji", "visited": false, "firstVisited": "" },
+        { "name": "博尔塔拉蒙古自治州", "altName": "Bortala", "visited": true, "firstVisited": "2024.05" },
+        { "name": "巴音郭楞蒙古自治州", "altName": "Bayingolin", "visited": true, "firstVisited": "2024.05" },
+        { "name": "克孜勒苏柯尔克孜自治州", "altName": "Kizilsu", "visited": true, "firstVisited": "2024.04" },
+        { "name": "伊犁哈萨克自治州", "altName": "Ili", "visited": true, "firstVisited": "2024.05" },
+        { "name": "阿克苏地区", "altName": "Aksu", "visited": true, "firstVisited": "2024.05" },
+        { "name": "喀什地区", "altName": "Kashgar", "visited": true, "firstVisited": "2024.04" },
+        { "name": "和田地区", "altName": "Hotan", "visited": false, "firstVisited": "" },
+        { "name": "塔城地区", "altName": "Tarbagatay", "visited": false, "firstVisited": "" },
+        { "name": "阿勒泰地区", "altName": "Altay", "visited": false, "firstVisited": "" },
+        { "name": "石河子市", "altName": "Shihezi", "visited": false, "firstVisited": "" },
+        { "name": "阿拉尔市", "altName": "Aral", "visited": false, "firstVisited": "" },
+        { "name": "图木舒克市", "altName": "Tumxuk", "visited": false, "firstVisited": "" },
+        { "name": "五家渠市", "altName": "Wujiaqu", "visited": false, "firstVisited": "" },
+        { "name": "北屯市", "altName": "Beitun", "visited": false, "firstVisited": "" },
+        { "name": "铁门关市", "altName": "Tiemenguan", "visited": false, "firstVisited": "" },
+        { "name": "双河市", "altName": "Shuanghe", "visited": true, "firstVisited": "2024.05" },
+        { "name": "可克达拉市", "altName": "Kokdala", "visited": false, "firstVisited": "" },
+        { "name": "昆玉市", "altName": "Kunyu", "visited": false, "firstVisited": "" },
+        { "name": "胡杨河市", "altName": "Huyanghe", "visited": false, "firstVisited": "" },
+        { "name": "新星市", "altName": "Xinxing", "visited": false, "firstVisited": "" },
+        { "name": "白杨市", "altName": "Baiyang", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ],
+  "Tibet": [
+    {
+      "name": "西藏自治区", 
+      "altName": "Tibet",
+      "visited": false, 
+      "firstVisited": "",
+      "prefectures": [
+        { "name": "拉萨市", "altName": "Lhasa", "visited": false, "firstVisited": "" },
+        { "name": "日喀则市", "altName": "Shigatse", "visited": false, "firstVisited": "" },
+        { "name": "昌都市", "altName": "Chamdo", "visited": false, "firstVisited": "" },
+        { "name": "林芝市", "altName": "Nyingchi", "visited": false, "firstVisited": "" },
+        { "name": "山南市", "altName": "Shannan", "visited": false, "firstVisited": "" },
+        { "name": "那曲市", "altName": "Nagqu", "visited": false, "firstVisited": "" },
+        { "name": "阿里地区", "altName": "Ngari", "visited": false, "firstVisited": "" }
+      ]
+    }
+  ]
+}
