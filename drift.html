@@ -39,6 +39,7 @@
       background: rgb(255, 255, 255);
       padding: 20px;
       box-sizing: border-box;
+      overflow-x: hidden;
       overflow-y: auto; /* 支持内容滚动 */
     }
     #data-overlay.visible {
@@ -238,6 +239,7 @@
         console.warn(`Region ${regionId} not found in SVG`);
         return;
       }
+      document.getElementById('data-overlay').scrollTop = 0; 
 
       // 获取边界框并计算 viewBox
       const bbox = region.getBBox();
