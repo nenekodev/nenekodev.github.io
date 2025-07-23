@@ -124,7 +124,7 @@
       "visited": true, 
       "firstVisited": "2025.04",
       "prefectures": [
-        { "name": "沈阳市", "altName": "Shenyan", "visited": true, "firstVisited": "2025.04" },
+        { "name": "沈阳市", "altName": "Shenyang", "visited": true, "firstVisited": "2025.04" },
         { "name": "大连市", "altName": "Dalian", "visited": false, "firstVisited": "" },
         { "name": "鞍山市", "altName": "Anshan", "visited": true, "firstVisited": "2025.04" },
         { "name": "抚顺市", "altName": "Fushun", "visited": true, "firstVisited": "2025.04" },
@@ -350,7 +350,7 @@
         { "name": "湘潭市", "altName": "Xiangtan", "visited": false, "firstVisited": "" },
         { "name": "衡阳市", "altName": "Hengyang", "visited": true, "firstVisited": "2020.06" },
         { "name": "邵阳市", "altName": "Shaoyang", "visited": true, "firstVisited": "2017.02" },
-        { "name": "岳阳市", "altName": "Yueyang", "visited": true, "firstVisited": "2010.06" },
+        { "name": "岳阳市", "altName": "Yueyang", "visited": true, "firstVisited": "2015.07" },
         { "name": "常德市", "altName": "Changde", "visited": true, "firstVisited": "2010.06" },
         { "name": "张家界市", "altName": "Zhangjiajie", "visited": false, "firstVisited": "" },
         { "name": "益阳市", "altName": "Yiyang", "visited": false, "firstVisited": "" },
