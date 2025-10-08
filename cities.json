@@ -579,18 +579,18 @@
     {
       "name": "甘肃省", 
       "altName": "Gansu",
-      "visited": false, 
-      "firstVisited": "",
+      "visited": true, 
+      "firstVisited": "2025.10",
       "prefectures": [
         { "name": "兰州市", "altName": "Lanzhou", "visited": false, "firstVisited": "" },
-        { "name": "嘉峪关市", "altName": "Jiayuguan", "visited": false, "firstVisited": "" },
+        { "name": "嘉峪关市", "altName": "Jiayuguan", "visited": true, "firstVisited": "2025.10" },
         { "name": "金昌市", "altName": "Jinchang", "visited": false, "firstVisited": "" },
         { "name": "白银市", "altName": "Baiyin", "visited": false, "firstVisited": "" },
         { "name": "天水市", "altName": "Tianshui", "visited": false, "firstVisited": "" },
         { "name": "武威市", "altName": "Wuwei", "visited": false, "firstVisited": "" },
-        { "name": "张掖市", "altName": "Zhangye", "visited": false, "firstVisited": "" },
+        { "name": "张掖市", "altName": "Zhangye", "visited": true, "firstVisited": "2025.10" },
         { "name": "平凉市", "altName": "Pingliang", "visited": false, "firstVisited": "" },
-        { "name": "酒泉市", "altName": "Jiuquan", "visited": false, "firstVisited": "" },
+        { "name": "酒泉市", "altName": "Jiuquan", "visited": true, "firstVisited": "2025.10" },
         { "name": "庆阳市", "altName": "Qingyang", "visited": false, "firstVisited": "" },
         { "name": "定西市", "altName": "Dingxi", "visited": false, "firstVisited": "" },
         { "name": "陇南市", "altName": "Longnan", "visited": false, "firstVisited": "" },
@@ -603,17 +603,17 @@
     {
       "name": "青海省", 
       "altName": "Qinghai",
-      "visited": false, 
-      "firstVisited": "",
+      "visited": true, 
+      "firstVisited": "2025.10",
       "prefectures": [
-        { "name": "西宁市", "altName": "Xining", "visited": false, "firstVisited": "" },
-        { "name": "海东市", "altName": "Haidong", "visited": false, "firstVisited": "" },
-        { "name": "海北藏族自治州", "altName": "Haibei", "visited": false, "firstVisited": "" },
+        { "name": "西宁市", "altName": "Xining", "visited": true, "firstVisited": "2025.10" },
+        { "name": "海东市", "altName": "Haidong", "visited": true, "firstVisited": "2025.10" },
+        { "name": "海北藏族自治州", "altName": "Haibei", "visited": true, "firstVisited": "2025.10" },
         { "name": "黄南藏族自治州", "altName": "Huangnan", "visited": false, "firstVisited": "" },
-        { "name": "海南藏族自治州", "altName": "Hainan", "visited": false, "firstVisited": "" },
+        { "name": "海南藏族自治州", "altName": "Hainan", "visited": true, "firstVisited": "2025.10" },
         { "name": "果洛藏族自治州", "altName": "Golog", "visited": false, "firstVisited": "" },
         { "name": "玉树藏族自治州", "altName": "Yushu", "visited": false, "firstVisited": "" },
-        { "name": "海西蒙古族藏族自治州", "altName": "Haixi", "visited": false, "firstVisited": "" }
+        { "name": "海西蒙古族藏族自治州", "altName": "Haixi", "visited": true, "firstVisited": "2025.10" }
       ]
     }
   ],
