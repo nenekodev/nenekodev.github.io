@@ -228,7 +228,7 @@
         { "name": "厦门市", "altName": "Xiamen", "visited": true, "firstVisited": "2017.08" },
         { "name": "莆田市", "altName": "Putian", "visited": false, "firstVisited": "" },
         { "name": "三明市", "altName": "Sanming", "visited": true, "firstVisited": "2017.08" },
-        { "name": "泉州市", "altName": "Quanzhou", "visited": false, "firstVisited": "" },
+        { "name": "泉州市", "altName": "Quanzhou", "visited": false, "firstVisited": "2026.02" },
         { "name": "漳州市", "altName": "Zhangzhou", "visited": true, "firstVisited": "2017.08" },
         { "name": "南平市", "altName": "Nanping", "visited": true, "firstVisited": "2017.08" },
         { "name": "龙岩市", "altName": "Longyan", "visited": true, "firstVisited": "2017.08" },
