@@ -444,17 +444,17 @@
         { "name": "南宁市", "altName": "Nanning", "visited": true, "firstVisited": "2025.11" },
         { "name": "柳州市", "altName": "Liuzhou", "visited": true, "firstVisited": "2017.05" },
         { "name": "桂林市", "altName": "Guilin", "visited": true, "firstVisited": "2018.08" },
-        { "name": "梧州市", "altName": "Wuzhou", "visited": false, "firstVisited": "" },
-        { "name": "北海市", "altName": "Beihai", "visited": false, "firstVisited": "" },
-        { "name": "防城港市", "altName": "Fangchenggang", "visited": false, "firstVisited": "" },
+        { "name": "梧州市", "altName": "Wuzhou", "visited": true, "firstVisited": "2026.05" },
+        { "name": "北海市", "altName": "Beihai", "visited": true, "firstVisited": "2026.05" },
+        { "name": "防城港市", "altName": "Fangchenggang", "visited": true, "firstVisited": "2026.05" },
         { "name": "钦州市", "altName": "Qinzhou", "visited": false, "firstVisited": "" },
         { "name": "贵港市", "altName": "Guigang", "visited": true, "firstVisited": "2025.11" },
         { "name": "玉林市", "altName": "Yulin, Guangxi", "visited": false, "firstVisited": "" },
-        { "name": "百色市", "altName": "Baise", "visited": false, "firstVisited": "" },
+        { "name": "百色市", "altName": "Baise", "visited": true, "firstVisited": "2026.05" },
         { "name": "贺州市", "altName": "Hezhou", "visited": false, "firstVisited": "" },
         { "name": "河池市", "altName": "Hechi", "visited": false, "firstVisited": "" },
         { "name": "来宾市", "altName": "Laibin", "visited": false, "firstVisited": "" },
-        { "name": "崇左市", "altName": "Chongzuo", "visited": false, "firstVisited": "" }
+        { "name": "崇左市", "altName": "Chongzuo", "visited": true, "firstVisited": "2026.05" }
       ]
     }
   ],
