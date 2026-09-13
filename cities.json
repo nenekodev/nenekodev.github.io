@@ -465,7 +465,7 @@
       "visited": true, 
       "firstVisited": "2018.08",
       "prefectures": [
-        { "name": "贵阳市", "altName": "Guiyang", "visited": false, "firstVisited": "" },
+        { "name": "贵阳市", "altName": "Guiyang", "visited": true, "firstVisited": "2026.09" },
         { "name": "六盘水市", "altName": "Liupanshui", "visited": false, "firstVisited": "" },
         { "name": "遵义市", "altName": "Zunyi", "visited": false, "firstVisited": "" },
         { "name": "安顺市", "altName": "Anshun", "visited": false, "firstVisited": "" },
