@@ -452,8 +452,8 @@
         { "name": "玉林市", "altName": "Yulin, Guangxi", "visited": false, "firstVisited": "" },
         { "name": "百色市", "altName": "Baise", "visited": true, "firstVisited": "2026.05" },
         { "name": "贺州市", "altName": "Hezhou", "visited": false, "firstVisited": "" },
-        { "name": "河池市", "altName": "Hechi", "visited": false, "firstVisited": "" },
-        { "name": "来宾市", "altName": "Laibin", "visited": false, "firstVisited": "" },
+        { "name": "河池市", "altName": "Hechi", "visited": true, "firstVisited": "2026.10" },
+        { "name": "来宾市", "altName": "Laibin", "visited": true, "firstVisited": "2026.10" },
         { "name": "崇左市", "altName": "Chongzuo", "visited": true, "firstVisited": "2026.05" }
       ]
     }
@@ -467,13 +467,13 @@
       "prefectures": [
         { "name": "贵阳市", "altName": "Guiyang", "visited": true, "firstVisited": "2026.09" },
         { "name": "六盘水市", "altName": "Liupanshui", "visited": false, "firstVisited": "" },
-        { "name": "遵义市", "altName": "Zunyi", "visited": false, "firstVisited": "" },
+        { "name": "遵义市", "altName": "Zunyi", "visited": true, "firstVisited": "2026.10" },
         { "name": "安顺市", "altName": "Anshun", "visited": false, "firstVisited": "" },
         { "name": "毕节市", "altName": "Bijie", "visited": false, "firstVisited": "" },
         { "name": "铜仁市", "altName": "Tongren", "visited": false, "firstVisited": "" },
-        { "name": "黔西南布依族苗族自治州", "altName": "Qianxinan", "visited": false, "firstVisited": "" },
+        { "name": "黔西南布依族苗族自治州", "altName": "Qianxinan", "visited": true, "firstVisited": "2026.09" },
         { "name": "黔东南苗族侗族自治州", "altName": "Qiandongnan", "visited": true, "firstVisited": "2018.08" },
-        { "name": "黔南布依族苗族自治州", "altName": "Qiannan", "visited": false, "firstVisited": "" }
+        { "name": "黔南布依族苗族自治州", "altName": "Qiannan", "visited": true, "firstVisited": "2026.10" }
       ]
     }
   ],
@@ -485,10 +485,10 @@
       "firstVisited": "2006.05",
       "prefectures": [
         { "name": "昆明市", "altName": "Kunming", "visited": true, "firstVisited": "2006.05" },
-        { "name": "曲靖市", "altName": "Qujing", "visited": false, "firstVisited": "" },
+        { "name": "曲靖市", "altName": "Qujing", "visited": true, "firstVisited": "2026.09" },
         { "name": "玉溪市", "altName": "Yuxi", "visited": false, "firstVisited": "" },
-        { "name": "保山市", "altName": "Baoshan", "visited": false, "firstVisited": "" },
-        { "name": "昭通市", "altName": "Zhaotong", "visited": false, "firstVisited": "" },
+        { "name": "保山市", "altName": "Baoshan", "visited": true, "firstVisited": "2026.09" },
+        { "name": "昭通市", "altName": "Zhaotong", "visited": true, "firstVisited": "2026.09" },
         { "name": "丽江市", "altName": "Lijiang", "visited": true, "firstVisited": "2006.05" },
         { "name": "普洱市", "altName": "Pu'er", "visited": false, "firstVisited": "" },
         { "name": "临沧市", "altName": "Lincang", "visited": false, "firstVisited": "" },
@@ -498,8 +498,8 @@
         { "name": "西双版纳傣族自治州", "altName": "Sipsong Panna", "visited": false, "firstVisited": "" },
         { "name": "大理白族自治州", "altName": "Dali", "visited": true, "firstVisited": "2006.05" },
         { "name": "德宏傣族景颇族自治州", "altName": "Dehong", "visited": false, "firstVisited": "" },
-        { "name": "怒江傈僳族自治州", "altName": "Nujiang", "visited": false, "firstVisited": "" },
-        { "name": "迪庆藏族自治州", "altName": "Deqen", "visited": false, "firstVisited": "" }
+        { "name": "怒江傈僳族自治州", "altName": "Nujiang", "visited": true, "firstVisited": "2026.09" },
+        { "name": "迪庆藏族自治州", "altName": "Deqen", "visited": true, "firstVisited": "2026.09" }
       ]
     }
   ],
@@ -518,7 +518,7 @@
       "prefectures": [
         { "name": "成都市", "altName": "Chengdu", "visited": true, "firstVisited": "2016.08" },
         { "name": "自贡市", "altName": "Zigong", "visited": false, "firstVisited": "" },
-        { "name": "攀枝花市", "altName": "Panzhihua", "visited": false, "firstVisited": "" },
+        { "name": "攀枝花市", "altName": "Panzhihua", "visited": true, "firstVisited": "2026.10" },
         { "name": "泸州市", "altName": "Luzhou", "visited": false, "firstVisited": "" },
         { "name": "德阳市", "altName": "Deyang", "visited": false, "firstVisited": "" },
         { "name": "绵阳市", "altName": "Mianyang", "visited": false, "firstVisited": "" },
@@ -535,8 +535,8 @@
         { "name": "巴中市", "altName": "Bazhong", "visited": false, "firstVisited": "" },
         { "name": "资阳市", "altName": "Ziyang", "visited": false, "firstVisited": "" },
         { "name": "阿坝藏族羌族自治州", "altName": "Ngawa", "visited": false, "firstVisited": "" },
-        { "name": "甘孜藏族自治州", "altName": "Garze", "visited": false, "firstVisited": "" },
-        { "name": "凉山彝族自治州", "altName": "Liangshan", "visited": false, "firstVisited": "" }
+        { "name": "甘孜藏族自治州", "altName": "Garze", "visited": true, "firstVisited": "2026.09" },
+        { "name": "凉山彝族自治州", "altName": "Liangshan", "visited": true, "firstVisited": "2026.10" }
       ]
     }
   ],
