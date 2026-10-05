@@ -662,8 +662,8 @@
       "prefectures": [
         { "name": "拉萨市", "altName": "Lhasa", "visited": false, "firstVisited": "" },
         { "name": "日喀则市", "altName": "Shigatse", "visited": false, "firstVisited": "" },
-        { "name": "昌都市", "altName": "Chamdo", "visited": false, "firstVisited": "" },
-        { "name": "林芝市", "altName": "Nyingchi", "visited": false, "firstVisited": "" },
+        { "name": "昌都市", "altName": "Chamdo", "visited": true, "firstVisited": "2026.09" },
+        { "name": "林芝市", "altName": "Nyingchi", "visited": true, "firstVisited": "2026.09" },
         { "name": "山南市", "altName": "Shannan", "visited": false, "firstVisited": "" },
         { "name": "那曲市", "altName": "Nagqu", "visited": false, "firstVisited": "" },
         { "name": "阿里地区", "altName": "Ngari", "visited": false, "firstVisited": "" }
