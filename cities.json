@@ -657,8 +657,8 @@
     {
       "name": "西藏自治区", 
       "altName": "Tibet",
-      "visited": false, 
-      "firstVisited": "",
+      "visited": true, 
+      "firstVisited": "2026.09",
       "prefectures": [
         { "name": "拉萨市", "altName": "Lhasa", "visited": false, "firstVisited": "" },
         { "name": "日喀则市", "altName": "Shigatse", "visited": false, "firstVisited": "" },
